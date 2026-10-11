@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Share an experience report
+    url: https://github.com/OWNER/REPO/discussions/new?category=experience-reports
+    about: You ran a session or built a tree. Tell us what happened.
+  - name: Suggest an idea
+    url: https://github.com/OWNER/REPO/discussions/new?category=ideas
+    about: A pattern, a rule, or a clearer explanation.
+  - name: Ask a question
+    url: https://github.com/OWNER/REPO/discussions/new?category=q-a
+    about: How to do something with the Tree of Influence.

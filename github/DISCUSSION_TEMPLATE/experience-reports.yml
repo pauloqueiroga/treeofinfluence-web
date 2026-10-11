@@ -1,0 +1,46 @@
+title: "[Report] "
+labels: ["experience report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing. A few sentences per question are enough, and only the first one is required.
+        Reports of sessions that went wrong are as useful as reports of success.
+        Everything here is public: remove the names of companies, products, teams, and people first.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: The topic, how many people took part, in person or remote, and the tool you used.
+      placeholder: "Example: 12 people from 3 teams, remote, on a digital whiteboard, mapping why releases slip."
+    validations:
+      required: true
+  - type: textarea
+    id: what-you-did
+    attributes:
+      label: What you did
+      description: The steps you ran, how long they took, and anything you skipped or changed.
+  - type: textarea
+    id: learned
+    attributes:
+      label: What the group learned
+      description: The insight the tree produced, or the one it did not.
+  - type: textarea
+    id: surprises
+    attributes:
+      label: What surprised you
+      description: Anything that went wrong, felt awkward, or worked better than expected.
+  - type: textarea
+    id: picture
+    attributes:
+      label: A picture of the tree
+      description: Optional. Drop an anonymized photo or export here, only with the participants' agreement.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Before you post
+      options:
+        - label: I removed the names of companies, products, teams, and people.
+          required: true
+        - label: I have the right to share this, and agree that it is published under CC BY 4.0.
+          required: true

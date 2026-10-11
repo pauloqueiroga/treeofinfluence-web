@@ -1,0 +1,27 @@
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: A new pattern, a change to a rule, or a clearer way to explain something.
+    validations:
+      required: true
+  - type: textarea
+    id: situation
+    attributes:
+      label: The situation behind it
+      description: What happened that made you think of it? Ideas grounded in a real session are the easiest to adopt.
+  - type: input
+    id: page
+    attributes:
+      label: Related page
+      description: Optional. The address of the website page it would change.
+  - type: checkboxes
+    id: license
+    attributes:
+      label: License
+      options:
+        - label: I agree that my contribution is published under CC BY 4.0.
+          required: true
