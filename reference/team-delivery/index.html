@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example: Team delivery gaps | Tree of Influence</title>
+  <meta name="description" content="A team maps why it cannot deliver reliably, and decomposes one action / intervention into a role definition.">
+  <link rel="canonical" href="https://treeofinfluence.com/reference/team-delivery/">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/img/tree-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Tree of Influence">
+  <meta property="og:title" content="Example: Team delivery gaps">
+  <meta property="og:description" content="A team maps why it cannot deliver reliably, and decomposes one action / intervention into a role definition.">
+  <meta property="og:url" content="https://treeofinfluence.com/reference/team-delivery/">
+  <meta property="og:image" content="https://treeofinfluence.com/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A tree made of sticky notes: brown paper roots and trunk, a canopy of green notes, and a few indigo notes among the leaves.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Example: Team delivery gaps","description":"A team maps why it cannot deliver reliably, and decomposes one action / intervention into a role definition.","url":"https://treeofinfluence.com/reference/team-delivery/","inLanguage":"en","dateModified":"2026-10-13T04:43:16.000Z","isPartOf":{"@type":"WebSite","@id":"https://treeofinfluence.com/#website","name":"Tree of Influence","url":"https://treeofinfluence.com/","inLanguage":"en"},"license":"https://creativecommons.org/licenses/by/4.0/","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tree of Influence","item":"https://treeofinfluence.com/"},{"@type":"ListItem","position":2,"name":"Reference","item":"https://treeofinfluence.com/reference/"},{"@type":"ListItem","position":3,"name":"Example: Team delivery gaps","item":"https://treeofinfluence.com/reference/team-delivery/"}]}}</script>
+  <script src="/js/analytics.js" data-id="G-QKE3RN9DKG" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <section class="consent" aria-label="Analytics cookies" hidden>
+    <p>May this site use Google Analytics cookies to count visits? Nothing is sent to Google unless you accept. <a href="/about/privacy/">Privacy policy</a></p>
+    <p class="consent-buttons"><button type="button" data-consent="granted">Accept</button> <button type="button" data-consent="denied">Decline</button></p>
+  </section>
+  <script>
+    window.analyticsChoice = function () {
+      try {
+        var saved = (localStorage.getItem("analytics-consent") || "").split(" ");
+        return Date.now() - Number(saved[1]) < 395 * 864e5 ? saved[0] : "";
+      } catch (e) { return ""; }
+    };
+    document.querySelector(".consent").hidden = Boolean(analyticsChoice());
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="/"><img class="site-mark" src="/img/tree-mark.svg" alt="" width="32" height="32">Tree of Influence</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quick-start/">Quick Start</a></li>
+          <li><a href="/reference/" aria-current="true">Reference</a></li>
+          <li><a href="/facilitation/">Facilitation</a></li>
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      <form class="site-search" action="/search/" role="search" hidden>
+        <input type="search" name="q" aria-label="Search the site">
+        <button type="submit">Search</button>
+      </form>
+      <script>document.querySelector(".site-search").hidden = false;</script>
+    </div>
+  </header>
+  <div class="page-grid">
+  <nav class="sidebar" aria-label="Reference pages">
+    <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/" aria-current="page">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+  </nav>
+
+  <main id="main" class="content" data-pagefind-body data-pagefind-meta="section:Reference">
+    <details class="section-menu" data-pagefind-ignore>
+      <summary>Menu: Reference</summary>
+      <nav aria-label="Reference pages (menu)">
+        <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/" aria-current="page">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+      </nav>
+      <nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#context">Context</a></li>
+    <li><a href="#goal">Goal</a></li>
+    <li><a href="#how-the-tree-was-built">How the tree was built</a></li>
+    <li><a href="#the-tree">The tree</a></li>
+    <li><a href="#what-it-revealed">What it revealed</a></li>
+    <li><a href="#lessons">Lessons</a></li>
+  </ul>
+</nav>
+
+    </details>
+
+    <h1>Example: Team delivery gaps</h1>
+    <p class="page-summary">A team maps why it cannot deliver reliably, and decomposes one action / intervention into a role definition.</p>
+
+    
+
+    <h2 id="context">Context</h2>
+<p>One product team in a software organization could not deliver reliably. About 55% of the bugs it fixed were new regressions. The team had skill gaps and lacked technical leadership, talent was hard to retain, and the team was perceived as incompetent.</p>
+<h2 id="goal">Goal</h2>
+<p>Understand why the team could not deliver reliably, and what would have to be true for that to change.</p>
+<p>The outcomes the group wrote down say how it would know: fewer regressions, environments that match each other, and a team lead other leads hear from.</p>
+<h2 id="how-the-tree-was-built">How the tree was built</h2>
+<p>The tree was built on a digital board, in sticky notes of 3 colors.</p>
+<ul>
+<li>The board was pre-seeded with what was already known. That included a measurement, the share of fixed bugs that were new regressions, and the organizational context around the team. See <a href="/facilitation/prepare/">Prepare</a>.</li>
+<li>The tree uses only the default relationship, <a href="/reference/influences/">influences</a>. It has no <a href="/reference/artifact-deliverable/">artifact / deliverable</a> nodes.</li>
+<li>At least one action got a deep dive. &quot;Assign a tech lead with a proven track record&quot; was decomposed in its own area of the board.</li>
+</ul>
+<p>The board also held frames that were not part of the tree, where the group planned who would be on which team. That planning stayed beside the tree, not on its nodes.</p>
+<h2 id="the-tree">The tree</h2>
+<aside class="callout callout-note"><p class="callout-label">Note</p><p>The diagrams on this page are a simplified, anonymized excerpt of the real board. The node texts and arrows are a reconstruction that show how the tree reads, not a copy of every connection.</p> </aside>
+<figure class="diagram" style="max-width:754px;--diagram-min:620px">
+<svg viewBox="0 0 754 871" width="754" height="871" role="img" aria-labelledby="cases-deliveryTree-title cases-deliveryTree-desc" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+<title id="cases-deliveryTree-title">Excerpt of the team delivery gaps tree</title>
+<desc id="cases-deliveryTree-desc">13 nodes and 15 arrows: 5 root / problem, 4 action / intervention, 4 desired state / outcome. A text version follows the diagram.</desc>
+<defs><marker id="cases-deliveryTree-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F1D1A"/></marker><filter id="cases-deliveryTree-shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1F1D1A" flood-opacity="0.18"/></filter></defs>
+<g class="dg-zones">
+</g>
+<g class="dg-frames">
+</g>
+<g class="dg-nodes">
+<g class="dg-node" data-node="q4" transform="translate(23 603.8)"><g transform="rotate(0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Hard to retain</text><text x="12" y="59" font-size="14" fill="#FFFFFF">talent</text></g></g>
+<g class="dg-node" data-node="q2" transform="translate(246.2 603.8)"><g transform="rotate(1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Skill gaps on</text><text x="12" y="59" font-size="14" fill="#FFFFFF">the team</text></g></g>
+<g class="dg-node" data-node="q1" transform="translate(581 603.8)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Lack of</text><text x="12" y="59" font-size="14" fill="#FFFFFF">technical</text><text x="12" y="76" font-size="14" fill="#FFFFFF">leadership</text></g></g>
+<g class="dg-node" data-node="q3" transform="translate(302 427.8)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">About 55% of</text><text x="12" y="59" font-size="14" fill="#FFFFFF">fixed bugs are</text><text x="12" y="76" font-size="14" fill="#FFFFFF">new regressions</text></g></g>
+<g class="dg-node" data-node="q5" transform="translate(581 427.8)"><g transform="rotate(0 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">The team is</text><text x="12" y="59" font-size="14" fill="#FFFFFF">perceived as</text><text x="12" y="76" font-size="14" fill="#FFFFFF">incompetent</text></g></g>
+<g class="dg-node" data-node="b4" transform="translate(23 234.2)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Consider hiring</text><text x="12" y="59" font-size="14" fill="#1F1D1A">remote talent</text></g></g>
+<g class="dg-node" data-node="b2" transform="translate(209 234.2)"><g transform="rotate(0 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Hire a software</text><text x="12" y="59" font-size="14" fill="#1F1D1A">developer in</text><text x="12" y="76" font-size="14" fill="#1F1D1A">test</text></g></g>
+<g class="dg-node" data-node="b3" transform="translate(395 234.2)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Automate</text><text x="12" y="59" font-size="14" fill="#1F1D1A">deployment steps</text></g></g>
+<g class="dg-node" data-node="b1" transform="translate(581 234.2)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Assign a tech</text><text x="12" y="59" font-size="14" fill="#1F1D1A">lead with a</text><text x="12" y="76" font-size="14" fill="#1F1D1A">proven track</text><text x="12" y="93" font-size="14" fill="#1F1D1A">record</text></g></g>
+<g class="dg-node" data-node="r3" transform="translate(23 23)"><g transform="rotate(1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Dev equals QA</text><text x="12" y="59" font-size="14" fill="#FFFFFF">equals UAT</text><text x="12" y="76" font-size="14" fill="#FFFFFF">equals PROD</text></g></g>
+<g class="dg-node" data-node="r2" transform="translate(209 23)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">50% less</text><text x="12" y="59" font-size="14" fill="#FFFFFF">regression per</text><text x="12" y="76" font-size="14" fill="#FFFFFF">release</text></g></g>
+<g class="dg-node" data-node="r1" transform="translate(395 23)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Under 20% of</text><text x="12" y="59" font-size="14" fill="#FFFFFF">fixed bugs are</text><text x="12" y="76" font-size="14" fill="#FFFFFF">new</text></g></g>
+<g class="dg-node" data-node="r4" transform="translate(581 23)"><g transform="rotate(1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#cases-deliveryTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Other leads tell</text><text x="12" y="59" font-size="14" fill="#FFFFFF">us the new lead</text><text x="12" y="76" font-size="14" fill="#FFFFFF">has been talking</text><text x="12" y="93" font-size="14" fill="#FFFFFF">to them</text></g></g>
+</g>
+<g class="dg-edges">
+<path class="dg-edge" data-edge="q1&gt;q5&gt;influences" d="M656,598.8 Q663.2,568.3 656,537.8" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="q1&gt;q3&gt;influences" d="M576.8,605.8 Q525.1,555.2 457.1,530.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="q2&gt;q3&gt;influences" d="M339.2,599 Q356.1,570.6 358.7,537.5" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="q3&gt;q5&gt;influences" d="M457,479.8 Q516,492.7 575,479.8" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="q5&gt;b1&gt;influences" d="M656,422.8 Q665,383.5 656,344.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="q3&gt;b2&gt;influences" d="M349.9,423.3 Q339.7,379.1 311.6,343.6" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="q3&gt;b3&gt;influences" d="M404.1,423.3 Q432.2,387.8 442.4,343.6" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="q4&gt;b4&gt;influences" d="M98,598.8 Q124.6,471.5 98,344.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="b4&gt;b2&gt;influences" d="M178,286.2 Q190.5,289.8 203,286.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="b1&gt;r4&gt;influences" d="M656,229.2 Q666.7,181.1 656,133" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="b1&gt;r1&gt;influences" d="M606.9,230.4 Q574.1,171.5 519.8,131.5" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="b2&gt;r1&gt;influences" d="M333.1,230.4 Q387.4,190.4 420.2,131.5" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="b2&gt;r2&gt;influences" d="M284,229.2 Q294.7,181.1 284,133" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="b3&gt;r2&gt;influences" d="M420.9,230.4 Q388.1,171.5 333.8,131.5" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+<path class="dg-edge" data-edge="b3&gt;r3&gt;influences" d="M390.7,241.2 Q297,158.6 178.2,120.5" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-deliveryTree-arrow)"/>
+</g>
+<g class="dg-legend">
+<rect x="20" y="728.8" width="714" height="122" rx="4" fill="#F7F5F0" stroke="#5C574F"/>
+<text x="36" y="752.8" font-size="14" font-weight="700" fill="#1F1D1A">Legend</text>
+<rect x="36" y="768.8" width="15" height="15" rx="2" fill="#6B3A2A"/>
+<text x="60" y="780.8" font-size="14" fill="#1F1D1A">[P] Root / Problem</text>
+<rect x="222.6" y="768.8" width="15" height="15" rx="2" fill="#D97706"/>
+<text x="246.6" y="780.8" font-size="14" fill="#1F1D1A">[A] Action / Intervention</text>
+<rect x="463.1" y="768.8" width="15" height="15" rx="2" fill="#2D7D46"/>
+<text x="487.1" y="780.8" font-size="14" fill="#1F1D1A">[O] Desired State / Outcome</text>
+<text x="36" y="808.8" font-size="14" fill="#1F1D1A">Flow: roots (bottom) → outcomes (top).</text>
+<text x="36" y="828.8" font-size="14" fill="#1F1D1A">Context: why one product team cannot deliver reliably. An anonymized excerpt.</text>
+</g>
+</svg>
+<figcaption>13 nodes of the tree. The real legend named the 3 colors Roots, Actions, and Desired State.</figcaption>
+</figure>
+<details class="diagram-text"><summary>Diagram as text: Excerpt of the team delivery gaps tree</summary><p>Nodes:</p><ul><li>Root / Problem: "Hard to retain talent"</li><li>Root / Problem: "Skill gaps on the team"</li><li>Root / Problem: "Lack of technical leadership"</li><li>Root / Problem: "About 55% of fixed bugs are new regressions"</li><li>Root / Problem: "The team is perceived as incompetent"</li><li>Action / Intervention: "Consider hiring remote talent"</li><li>Action / Intervention: "Hire a software developer in test"</li><li>Action / Intervention: "Automate deployment steps"</li><li>Action / Intervention: "Assign a tech lead with a proven track record"</li><li>Desired State / Outcome: "Dev equals QA equals UAT equals PROD"</li><li>Desired State / Outcome: "50% less regression per release"</li><li>Desired State / Outcome: "Under 20% of fixed bugs are new"</li><li>Desired State / Outcome: "Other leads tell us the new lead has been talking to them"</li></ul><p>Arrows:</p><ul><li>"Lack of technical leadership" influences "The team is perceived as incompetent"</li><li>"Lack of technical leadership" influences "About 55% of fixed bugs are new regressions"</li><li>"Skill gaps on the team" influences "About 55% of fixed bugs are new regressions"</li><li>"About 55% of fixed bugs are new regressions" influences "The team is perceived as incompetent"</li><li>"The team is perceived as incompetent" influences "Assign a tech lead with a proven track record"</li><li>"About 55% of fixed bugs are new regressions" influences "Hire a software developer in test"</li><li>"About 55% of fixed bugs are new regressions" influences "Automate deployment steps"</li><li>"Hard to retain talent" influences "Consider hiring remote talent"</li><li>"Consider hiring remote talent" influences "Hire a software developer in test"</li><li>"Assign a tech lead with a proven track record" influences "Other leads tell us the new lead has been talking to them"</li><li>"Assign a tech lead with a proven track record" influences "Under 20% of fixed bugs are new"</li><li>"Hire a software developer in test" influences "Under 20% of fixed bugs are new"</li><li>"Hire a software developer in test" influences "50% less regression per release"</li><li>"Automate deployment steps" influences "50% less regression per release"</li><li>"Automate deployment steps" influences "Dev equals QA equals UAT equals PROD"</li></ul></details>
+<p>The real tree has more nodes than this excerpt, among them an action named &quot;Establish a second team&quot; and an outcome described as &quot;The team uses AI tools frequently.&quot;</p>
+<h3 id="the-deep-dive">The deep dive</h3>
+<p>The action with the most at stake was assigning a tech lead. Who that person should be was a decision too complex for one node, so the group gave it a <a href="/reference/deep-dive/">deep-dive sub-tree</a>.</p>
+<p>The deep dive was organized around the role, in 4 areas.</p>
+<figure class="diagram" style="max-width:739px;--diagram-min:620px">
+<svg viewBox="0 0 739 740" width="739" height="740" role="img" aria-labelledby="cases-deliveryDeepDive-title cases-deliveryDeepDive-desc" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+<title id="cases-deliveryDeepDive-title">The areas of the deep dive on assigning a tech lead</title>
+<desc id="cases-deliveryDeepDive-desc">1 node and 0 arrows: 1 action / intervention. A text version follows the diagram.</desc>
+<defs><marker id="cases-deliveryDeepDive-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F1D1A"/></marker><filter id="cases-deliveryDeepDive-shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1F1D1A" flood-opacity="0.18"/></filter></defs>
+<text x="20" y="38" font-size="17" font-weight="700" fill="#1F1D1A">Deep Dive: Assign a tech lead with a proven track record</text>
+<g class="dg-zones">
+</g>
+<g class="dg-frames">
+<g data-frame="Required characteristics">
+<rect x="20.1" y="443.2" width="345.4" height="156" rx="6" fill="#F7F5F0" stroke="#D9D4CA" stroke-width="1.5"/>
+<text x="32.1" y="465.2" font-size="13" font-weight="700" fill="#5C574F">Required characteristics</text>
+</g>
+<g data-frame="Key responsibilities">
+<rect x="20.1" y="56" width="345.4" height="156" rx="6" fill="#F7F5F0" stroke="#D9D4CA" stroke-width="1.5"/>
+<text x="32.1" y="78" font-size="13" font-weight="700" fill="#5C574F">Key responsibilities</text>
+</g>
+<g data-frame="Strengths of the candidates">
+<rect x="373.5" y="443.2" width="345.4" height="156" rx="6" fill="#F7F5F0" stroke="#D9D4CA" stroke-width="1.5"/>
+<text x="385.5" y="465.2" font-size="13" font-weight="700" fill="#5C574F">Strengths of the candidates</text>
+</g>
+<g data-frame="Weaknesses to manage">
+<rect x="373.5" y="56" width="345.4" height="156" rx="6" fill="#F7F5F0" stroke="#D9D4CA" stroke-width="1.5"/>
+<text x="385.5" y="78" font-size="13" font-weight="700" fill="#5C574F">Weaknesses to manage</text>
+</g>
+</g>
+<g class="dg-nodes">
+<g class="dg-node" data-node="b1" transform="translate(294.5 287.6)"><g transform="rotate(-0.45 75 52)"><rect x="-6" y="-6" width="162" height="116" rx="7" fill="none" stroke="#1F1D1A" stroke-width="2.5"/><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#cases-deliveryDeepDive-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Assign a tech</text><text x="12" y="59" font-size="14" fill="#1F1D1A">lead with a</text><text x="12" y="76" font-size="14" fill="#1F1D1A">proven track</text><text x="12" y="93" font-size="14" fill="#1F1D1A">record</text></g></g>
+</g>
+<g class="dg-edges">
+</g>
+<g class="dg-legend">
+<rect x="20" y="617.2" width="699" height="102" rx="4" fill="#F7F5F0" stroke="#5C574F"/>
+<text x="36" y="641.2" font-size="14" font-weight="700" fill="#1F1D1A">Legend</text>
+<rect x="36" y="657.2" width="15" height="15" rx="2" fill="#D97706"/>
+<text x="60" y="669.2" font-size="14" fill="#1F1D1A">[A] Action / Intervention</text>
+<rect x="276.5" y="656.2" width="15" height="15" rx="2" fill="none" stroke="#1F1D1A" stroke-width="2.5"/>
+<text x="300.5" y="669.2" font-size="14" fill="#1F1D1A">Node from the full tree</text>
+<text x="36" y="697.2" font-size="14" fill="#1F1D1A">Flow: roots (bottom) → outcomes (top).</text>
+</g>
+</svg>
+<figcaption>The parent node and the 4 areas the group filled around it. The nodes inside describe real people, so they are not shown.</figcaption>
+</figure>
+<details class="diagram-text"><summary>Diagram as text: The areas of the deep dive on assigning a tech lead</summary><p>Nodes:</p><ul><li>Action / Intervention: "Assign a tech lead with a proven track record" (node from the full tree)</li></ul><p>No arrows yet.</p></details>
+<p>It does not look like the full tree, and it does not have to. A deep dive takes whatever structure the question needs.</p>
+<h2 id="what-it-revealed">What it revealed</h2>
+<ul>
+<li>Measurement anchored the tree. &quot;About 55% of fixed bugs are new regressions&quot; is a statistic, and it is a problem: arrows leave it toward the actions. &quot;Under 20% of fixed bugs are new,&quot; is an outcome. The group could see both the current state and the target on one board.</li>
+<li>An outcome can be something you would notice.&quot;Other leads tell us the new lead has been talking to them&quot; is not a number. It is one sign the group agreed to watch for.</li>
+<li>Assigning a tech lead meant choosing a person, and a node could not hold that. The group used the deep dive to make a hiring decision.</li>
+</ul>
+<h2 id="lessons">Lessons</h2>
+<ul>
+<li><strong>Pre-seed with data.</strong> A measurement on the board before the session starts gives participants a fact to react to, and it keeps the conversation concrete.</li>
+<li><strong>A node's type comes from its role, not its wording.</strong> A statistic can be a problem, and an overheard remark can be an outcome. See the <a href="/reference/principles/#a-nodes-type-comes-from-its-role-not-its-wording">core principles</a>.</li>
+<li>Use the group's vocabulary, and write it in the legend. The legend says what they mean, so the tree reads without help.</li>
+<li>Deep-dive on the nodes that carry decisions.</li>
+<li>Keep planning beside the tree, not in it. The hiring decision and the team composition used the tree as input. Neither became a node. See <a href="/reference/scope/">what it is and is not</a>.</li>
+</ul>
+
+
+    
+
+    
+    <section class="related" aria-labelledby="related-heading" data-pagefind-ignore>
+      <h2 id="related-heading">Related</h2>
+      <ul>
+        <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+        <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+        <li><a href="/facilitation/prepare/">Prepare</a></li>
+        <li><a href="/reference/principles/">Core principles</a></li>
+        <li><a href="/reference/scope/">What it is and is not</a></li>
+      </ul>
+    </section>
+    
+
+    
+    <nav class="pager" aria-label="Previous and next pages" data-pagefind-ignore>
+      <a class="pager-previous" href="/reference/ai/"><span>Previous</span>Using a tree with AI</a>
+      <a class="pager-next" href="/reference/technical-debt/"><span>Next</span>Example: Product-line technical debt over 2 years</a>
+    </nav>
+    
+  </main>
+
+  
+  <aside class="toc-column"><nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#context">Context</a></li>
+    <li><a href="#goal">Goal</a></li>
+    <li><a href="#how-the-tree-was-built">How the tree was built</a></li>
+    <li><a href="#the-tree">The tree</a></li>
+    <li><a href="#what-it-revealed">What it revealed</a></li>
+    <li><a href="#lessons">Lessons</a></li>
+  </ul>
+</nav>
+</aside>
+  
+</div>
+
+  <footer class="site-footer">
+    <p>&copy; Paulo Queiroga and contributors. Text and diagrams licensed under <a href="/about/license/">CC BY 4.0</a>. <a href="/about/privacy/">Privacy</a></p>
+  </footer>
+  <script src="/js/steps.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Using a tree with AI | Tree of Influence</title>
+  <meta name="description" content="Why a tree is good input for an AI model, and a few places to start.">
+  <link rel="canonical" href="https://treeofinfluence.com/reference/ai/">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/img/tree-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Tree of Influence">
+  <meta property="og:title" content="Using a tree with AI">
+  <meta property="og:description" content="Why a tree is good input for an AI model, and a few places to start.">
+  <meta property="og:url" content="https://treeofinfluence.com/reference/ai/">
+  <meta property="og:image" content="https://treeofinfluence.com/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A tree made of sticky notes: brown paper roots and trunk, a canopy of green notes, and a few indigo notes among the leaves.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Using a tree with AI","description":"Why a tree is good input for an AI model, and a few places to start.","url":"https://treeofinfluence.com/reference/ai/","inLanguage":"en","dateModified":"2026-10-14T17:34:17.000Z","isPartOf":{"@type":"WebSite","@id":"https://treeofinfluence.com/#website","name":"Tree of Influence","url":"https://treeofinfluence.com/","inLanguage":"en"},"license":"https://creativecommons.org/licenses/by/4.0/","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tree of Influence","item":"https://treeofinfluence.com/"},{"@type":"ListItem","position":2,"name":"Reference","item":"https://treeofinfluence.com/reference/"},{"@type":"ListItem","position":3,"name":"Using a tree with AI","item":"https://treeofinfluence.com/reference/ai/"}]}}</script>
+  <script src="/js/analytics.js" data-id="G-QKE3RN9DKG" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <section class="consent" aria-label="Analytics cookies" hidden>
+    <p>May this site use Google Analytics cookies to count visits? Nothing is sent to Google unless you accept. <a href="/about/privacy/">Privacy policy</a></p>
+    <p class="consent-buttons"><button type="button" data-consent="granted">Accept</button> <button type="button" data-consent="denied">Decline</button></p>
+  </section>
+  <script>
+    window.analyticsChoice = function () {
+      try {
+        var saved = (localStorage.getItem("analytics-consent") || "").split(" ");
+        return Date.now() - Number(saved[1]) < 395 * 864e5 ? saved[0] : "";
+      } catch (e) { return ""; }
+    };
+    document.querySelector(".consent").hidden = Boolean(analyticsChoice());
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="/"><img class="site-mark" src="/img/tree-mark.svg" alt="" width="32" height="32">Tree of Influence</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quick-start/">Quick Start</a></li>
+          <li><a href="/reference/" aria-current="true">Reference</a></li>
+          <li><a href="/facilitation/">Facilitation</a></li>
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      <form class="site-search" action="/search/" role="search" hidden>
+        <input type="search" name="q" aria-label="Search the site">
+        <button type="submit">Search</button>
+      </form>
+      <script>document.querySelector(".site-search").hidden = false;</script>
+    </div>
+  </header>
+  <div class="page-grid">
+  <nav class="sidebar" aria-label="Reference pages">
+    <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/" aria-current="page">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+  </nav>
+
+  <main id="main" class="content" data-pagefind-body data-pagefind-meta="section:Reference">
+    <details class="section-menu" data-pagefind-ignore>
+      <summary>Menu: Reference</summary>
+      <nav aria-label="Reference pages (menu)">
+        <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/" aria-current="page">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+      </nav>
+      <nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#a-tree-of-influence-as-input">A tree of influence as input</a></li>
+    <li><a href="#what-to-hand-over">What to hand over</a></li>
+    <li><a href="#places-to-start">Places to start</a></li>
+    <li><a href="#beyond-the-algorithm">Beyond the algorithm</a></li>
+    <li><a href="#still-being-explored">Still being explored</a></li>
+  </ul>
+</nav>
+
+    </details>
+
+    <h1>Using a tree with AI</h1>
+    <p class="page-summary">Why a tree is good input for an AI model, and a few places to start.</p>
+
+    
+
+    <p>A Tree of Influence <a href="/reference/scope/">ends at understanding</a>, and everything that comes after takes the tree as input. An AI model is one more thing that can take it as input. This page covers why a tree works well there, what to hand over, and a few places to start. This guidance should help you find uses that fit your own. It contains no prompts and names no products, because both change faster than a page can follow. The reasons survive much longer.</p>
+<p>Whenever you are about to explain a situation to an AI model, and a tree of that situation exists, hand over the tree. The people who developed the Tree of Influence have done this for many kinds of work.</p>
+<h2 id="a-tree-of-influence-as-input">A tree of influence as input</h2>
+<p>These 5 properties do not depend on any particular model:</p>
+<ul>
+<li>A tree gives the model context it may lack. A model was not in the room. It knows your situation only through what it is given. A tree with a <a href="/reference/legend/">legend</a> can be read by a stranger, and a model is a stranger.</li>
+<li>In prose, relationships hide inside sentences, and the model has to guess at them. In a tree, each one is an arrow with a direction.</li>
+<li>A tree puts understanding before solutions. Models rush to solutions similarly to the way groups under pressure do. With the tree in hand, a model can aim at the causes the group found, in addition to the problem as you happened to word it.</li>
+<li>A tree carries the group's judgment. Node types and votes record what people decided together. It represents the problems, the desires, the intentions, and what matters most.</li>
+<li>A tree is small. The whole notation is 4 node types and 3 kinds of arrow. A few lines of legend explain it, and even a large tree is short as text.</li>
+</ul>
+<h2 id="what-to-hand-over">What to hand over</h2>
+<p>Most models are capable of interpreting a complete Tree of Influence from a legible image, such as an export from a digital board, or even a screenshot. Arrows on a crowded board are easy to misread, so check what the model saw.</p>
+<p>These alternatives are extremely effective as well:</p>
+<ul>
+<li>List the nodes by type, then the arrows as sentences. It is the same text version that makes a tree <a href="/reference/accessibility/#sharing-a-tree">readable without the board</a>.</li>
+<li>Don't forget the legend. Include the context, the tree scope, who built it, and when.</li>
+<li>Make the parking lot clear. Say it in words if needed.</li>
+</ul>
+<p>Then ask for what you need.</p>
+<p>Here is the finished tree from the <a href="/quick-start/">Quick Start</a>, followed by the same tree as text.</p>
+<figure class="diagram" style="max-width:840px;--diagram-min:620px">
+<svg viewBox="0 0 840 703" width="840" height="703" role="img" aria-labelledby="onboarding-prioritize-title onboarding-prioritize-desc" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+<title id="onboarding-prioritize-title">The tree after Prioritize</title>
+<desc id="onboarding-prioritize-desc">11 nodes and 8 arrows: 6 root / problem, 2 action / intervention, 2 desired state / outcome, 1 not yet typed. A text version follows the diagram.</desc>
+<defs><marker id="onboarding-prioritize-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F1D1A"/></marker><filter id="onboarding-prioritize-shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1F1D1A" flood-opacity="0.18"/></filter></defs>
+<g class="dg-zones">
+</g>
+<g class="dg-frames">
+<g data-frame="Parking lot">
+<rect x="641.7" y="20" width="178" height="156" rx="6" fill="#F7F5F0" stroke="#D9D4CA" stroke-width="1.5"/>
+<text x="653.7" y="42" font-size="13" font-weight="700" fill="#5C574F">Parking lot</text>
+</g>
+</g>
+<g class="dg-nodes">
+<g class="dg-node" data-node="dup" transform="translate(40 221.7)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Docs are stale</text></g></g>
+<g class="dg-node" data-node="p1" transform="translate(23.3 234)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Documentation is</text><text x="12" y="59" font-size="14" fill="#FFFFFF">out of date</text><circle cx="135" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/><circle cx="122" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/></g></g>
+<g class="dg-node" data-node="p2" transform="translate(23.3 410)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Each team</text><text x="12" y="59" font-size="14" fill="#FFFFFF">onboards</text><text x="12" y="76" font-size="14" fill="#FFFFFF">differently</text></g></g>
+<g class="dg-node" data-node="p5" transform="translate(209.3 410)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Setting up a</text><text x="12" y="59" font-size="14" fill="#FFFFFF">laptop takes a</text><text x="12" y="76" font-size="14" fill="#FFFFFF">week</text></g></g>
+<g class="dg-node" data-node="p3" transform="translate(488.3 410)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Senior people</text><text x="12" y="59" font-size="14" fill="#FFFFFF">have no time to</text><text x="12" y="76" font-size="14" fill="#FFFFFF">mentor</text><circle cx="135" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/><circle cx="122" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/><circle cx="109" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/></g></g>
+<g class="dg-node" data-node="a2" transform="translate(209.3 234)"><g transform="rotate(0 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Automate laptop</text><text x="12" y="59" font-size="14" fill="#1F1D1A">setup</text></g></g>
+<g class="dg-node" data-node="p4" transform="translate(395.3 234)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">New hires are</text><text x="12" y="59" font-size="14" fill="#FFFFFF">afraid to ask</text><text x="12" y="76" font-size="14" fill="#FFFFFF">questions</text><circle cx="135" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/><circle cx="122" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/></g></g>
+<g class="dg-node" data-node="a1" transform="translate(581.3 234)"><g transform="rotate(1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Assign each new</text><text x="12" y="59" font-size="14" fill="#1F1D1A">hire a buddy</text><circle cx="135" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/></g></g>
+<g class="dg-node" data-node="o1" transform="translate(116.3 58)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">New hires ship</text><text x="12" y="59" font-size="14" fill="#FFFFFF">something in</text><text x="12" y="76" font-size="14" fill="#FFFFFF">their first</text><text x="12" y="93" font-size="14" fill="#FFFFFF">month</text><circle cx="135" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/><circle cx="122" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/><circle cx="109" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/><circle cx="96" cy="17" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/></g></g>
+<g class="dg-node" data-node="o2" transform="translate(395.3 58)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">New hires feel</text><text x="12" y="59" font-size="14" fill="#FFFFFF">welcome and</text><text x="12" y="76" font-size="14" fill="#FFFFFF">confident</text></g></g>
+<g class="dg-node" data-node="sol" transform="translate(655.7 58)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#FFFFFF" stroke="#5C574F" stroke-width="1.5" filter="url(#onboarding-prioritize-shadow)"/><text x="12" y="30" font-size="14" fill="#1F1D1A">Buy a new wiki</text><text x="12" y="47" font-size="14" fill="#1F1D1A">tool</text></g></g>
+</g>
+<g class="dg-edges">
+<path class="dg-edge" data-edge="p2&gt;p1&gt;influences" d="M98.3,405 Q105.5,374.5 98.3,344" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+<path class="dg-edge" data-edge="p5&gt;a2&gt;influences" d="M284.3,405 Q291.5,374.5 284.3,344" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+<path class="dg-edge" data-edge="p3&gt;p4&gt;influences" d="M533.5,405.6 Q524.2,370.6 500.6,343.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+<path class="dg-edge" data-edge="p3&gt;a1&gt;influences" d="M593.1,405.6 Q616.8,378.2 626,343.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+<path class="dg-edge" data-edge="p1&gt;o1&gt;influences" d="M128.1,229.6 Q151.8,202.2 161,167.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+<path class="dg-edge" data-edge="a2&gt;o1&gt;influences" d="M254.5,229.6 Q245.2,194.6 221.6,167.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+<path class="dg-edge" data-edge="p4&gt;o2&gt;influences" d="M470.3,229 Q477.5,198.5 470.3,168" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+<path class="dg-edge" data-edge="a1&gt;o2&gt;influences" d="M597.7,230.6 Q570.9,190.7 529.6,166.1" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-prioritize-arrow)"/>
+</g>
+<g class="dg-legend">
+<rect x="20" y="535" width="800" height="148" rx="4" fill="#F7F5F0" stroke="#5C574F"/>
+<text x="36" y="559" font-size="14" font-weight="700" fill="#1F1D1A">Legend</text>
+<rect x="36" y="575" width="15" height="15" rx="2" fill="#6B3A2A"/>
+<text x="60" y="587" font-size="14" fill="#1F1D1A">[P] Root / Problem</text>
+<rect x="222.6" y="575" width="15" height="15" rx="2" fill="#D97706"/>
+<text x="246.6" y="587" font-size="14" fill="#1F1D1A">[A] Action / Intervention</text>
+<rect x="463.1" y="575" width="15" height="15" rx="2" fill="#2D7D46"/>
+<text x="487.1" y="587" font-size="14" fill="#1F1D1A">[O] Desired State / Outcome</text>
+<rect x="36" y="601" width="15" height="15" rx="2" fill="#FFFFFF" stroke="#5C574F" stroke-width="1.5"/>
+<text x="60" y="613" font-size="14" fill="#1F1D1A">Not yet typed</text>
+<circle cx="191.1" cy="608" r="5" fill="#FFFFFF" stroke="#1F1D1A" stroke-width="2"/>
+<text x="208.1" y="613" font-size="14" fill="#1F1D1A">Vote</text>
+<text x="36" y="641" font-size="14" fill="#1F1D1A">Flow: roots (bottom) → outcomes (top).</text>
+<text x="36" y="661" font-size="14" fill="#1F1D1A">Context: why new hires take months to become productive. Built by the platform team, October 2026.</text>
+</g>
+</svg>
+<figcaption>Dots are votes. The group cares most about new hires shipping early, and sees mentoring time as the deepest root.</figcaption>
+</figure>
+<details class="diagram-text"><summary>Diagram as text: The tree after Prioritize</summary><p>Nodes:</p><ul><li>Root / Problem: "Docs are stale"</li><li>Root / Problem: "Documentation is out of date" (2 votes)</li><li>Root / Problem: "Each team onboards differently"</li><li>Root / Problem: "Setting up a laptop takes a week"</li><li>Root / Problem: "Senior people have no time to mentor" (3 votes)</li><li>Root / Problem: "New hires are afraid to ask questions" (2 votes)</li><li>Action / Intervention: "Automate laptop setup"</li><li>Action / Intervention: "Assign each new hire a buddy" (1 vote)</li><li>Desired State / Outcome: "New hires ship something in their first month" (4 votes)</li><li>Desired State / Outcome: "New hires feel welcome and confident"</li><li>Not yet typed: "Buy a new wiki tool" (in &quot;Parking lot&quot;)</li></ul><p>Arrows:</p><ul><li>"Each team onboards differently" influences "Documentation is out of date"</li><li>"Setting up a laptop takes a week" influences "Automate laptop setup"</li><li>"Senior people have no time to mentor" influences "New hires are afraid to ask questions"</li><li>"Senior people have no time to mentor" influences "Assign each new hire a buddy"</li><li>"Documentation is out of date" influences "New hires ship something in their first month"</li><li>"Automate laptop setup" influences "New hires ship something in their first month"</li><li>"New hires are afraid to ask questions" influences "New hires feel welcome and confident"</li><li>"Assign each new hire a buddy" influences "New hires feel welcome and confident"</li></ul></details>
+<pre><code>Tree of Influence: why new hires take months to become productive
+Built by the platform team, October 2026
+
+Legend
+[P] Root / Problem
+[A] Action / Intervention
+[O] Desired State / Outcome
+Every arrow means &quot;influences&quot;
+Votes show what the group wants to focus on
+
+Nodes
+[P] Each team onboards differently
+[P] Documentation is out of date (2 votes)
+[P] Docs are stale (duplicate of &quot;Documentation is out of date&quot;)
+[P] Setting up a laptop takes a week
+[P] Senior people have no time to mentor (3 votes)
+[P] New hires are afraid to ask questions (2 votes)
+[A] Automate laptop setup
+[A] Assign each new hire a buddy (1 vote)
+[O] New hires ship something in their first month (4 votes)
+[O] New hires feel welcome and confident
+
+Parking lot
+Buy a new wiki tool (no type yet)
+
+Arrows
+&quot;Each team onboards differently&quot; influences &quot;Documentation is out of date&quot;
+&quot;Setting up a laptop takes a week&quot; influences &quot;Automate laptop setup&quot;
+&quot;Senior people have no time to mentor&quot; influences &quot;New hires are afraid to ask questions&quot;
+&quot;Senior people have no time to mentor&quot; influences &quot;Assign each new hire a buddy&quot;
+&quot;Documentation is out of date&quot; influences &quot;New hires ship something in their first month&quot;
+&quot;Automate laptop setup&quot; influences &quot;New hires ship something in their first month&quot;
+&quot;New hires are afraid to ask questions&quot; influences &quot;New hires feel welcome and confident&quot;
+&quot;Assign each new hire a buddy&quot; influences &quot;New hires feel welcome and confident&quot;
+</code></pre>
+<aside class="callout callout-tip"><p class="callout-label">Tip</p><p>Before you ask for anything, ask the model to describe the tree back to you. It takes a minute, and it shows whether the model read the arrows the way the group drew them.</p> </aside>
+<aside class="callout callout-trap"><p class="callout-label">Trap</p><p>Handing a tree to an AI service is sharing it. Trees often hold things people would not say in public. Follow your organization's rules for that service, and when in doubt, anonymize the tree first. See <a href="/about/contributing/#before-you-share-a-tree">before you share a tree</a>.</p> </aside>
+<h2 id="places-to-start">Places to start</h2>
+<p>Read this list the way participants read a <a href="/facilitation/prepare/">pre-seeded board</a>. Each entry is a hypothesis to be used, reworded, or ignored.</p>
+<ul>
+<li>Carry the understanding into the next tool. A tree feeds plans, backlogs, and decision records. A model can draft any of them from the tree, with the reasons attached.</li>
+<li>Ask the tree questions. Which problem reaches the most outcomes? What does every path to a given outcome pass through? Which nodes have no arrows yet?</li>
+<li>Ask for a challenge. Which arrows look weakest? What would a newcomer expect to find and not see? Take the answers back to the group as questions, not as edits.</li>
+<li>Compare versions. Hand over 2 <a href="/reference/living-document/">saved versions</a> and ask what persisted, what was resolved, and what emerged.</li>
+<li>Explain the tree to people who were not there. A one-page summary for leadership, a walkthrough for a new team member, or the same tree in another language.</li>
+<li>Keep it beside ongoing work. When a model helps with daily work in the same problem space, the tree tells it what that work is for.</li>
+</ul>
+<p>In addition to the list above, in general anytime you find yourself doing these two things:</p>
+<ul>
+<li>You are writing paragraphs to explain a situation to a model. If a tree of that situation exists, hand it over.</li>
+<li>A model keeps answering the wrong problem. The understanding it lacks belongs on a tree. If no tree exists, consider building one first.</li>
+</ul>
+<h2 id="beyond-the-algorithm">Beyond the algorithm</h2>
+<p><a href="/reference/principles/#the-conversation-is-the-product">The conversation is the product</a>. A model can read a tree, but it was not part of the conversation that built it.</p>
+<ul>
+<li>The group builds the tree. A tree written by a model and presented to a group skips the part that matters most, like a tree drawn alone.</li>
+<li>A model can help you prepare. It can pull candidate seed nodes out of interviews, incident reports, or survey results. Present them like any other seed, as hypotheses, and say where they came from.</li>
+<li>What a model says about a tree is a contribution. The people who own the tree decide what changes on the board.</li>
+</ul>
+<h2 id="still-being-explored">Still being explored</h2>
+<p>This page is about a subject that changes faster than any other on this website. If you hand a tree to a model and something useful or surprising comes back, <a href="/about/contributing/">please share what you learned</a>.</p>
+
+
+    
+
+    
+    <section class="related" aria-labelledby="related-heading" data-pagefind-ignore>
+      <h2 id="related-heading">Related</h2>
+      <ul>
+        <li><a href="/reference/scope/">What it is and is not</a></li>
+        <li><a href="/reference/legend/">The legend</a></li>
+        <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+        <li><a href="/reference/living-document/">A living document</a></li>
+        <li><a href="/about/contributing/">Contributing</a></li>
+      </ul>
+    </section>
+    
+
+    
+    <nav class="pager" aria-label="Previous and next pages" data-pagefind-ignore>
+      <a class="pager-previous" href="/reference/living-document/"><span>Previous</span>A living document</a>
+      <a class="pager-next" href="/reference/team-delivery/"><span>Next</span>Example: Team delivery gaps</a>
+    </nav>
+    
+  </main>
+
+  
+  <aside class="toc-column"><nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#a-tree-of-influence-as-input">A tree of influence as input</a></li>
+    <li><a href="#what-to-hand-over">What to hand over</a></li>
+    <li><a href="#places-to-start">Places to start</a></li>
+    <li><a href="#beyond-the-algorithm">Beyond the algorithm</a></li>
+    <li><a href="#still-being-explored">Still being explored</a></li>
+  </ul>
+</nav>
+</aside>
+  
+</div>
+
+  <footer class="site-footer">
+    <p>&copy; Paulo Queiroga and contributors. Text and diagrams licensed under <a href="/about/license/">CC BY 4.0</a>. <a href="/about/privacy/">Privacy</a></p>
+  </footer>
+  <script src="/js/steps.js" defer></script>
+</body>
+</html>

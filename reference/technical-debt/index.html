@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Example: Product-line technical debt over 2 years | Tree of Influence</title>
+  <meta name="description" content="A 90-node strategic tree, built in one planning cycle and updated in the next.">
+  <link rel="canonical" href="https://treeofinfluence.com/reference/technical-debt/">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/img/tree-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Tree of Influence">
+  <meta property="og:title" content="Example: Product-line technical debt over 2 years">
+  <meta property="og:description" content="A 90-node strategic tree, built in one planning cycle and updated in the next.">
+  <meta property="og:url" content="https://treeofinfluence.com/reference/technical-debt/">
+  <meta property="og:image" content="https://treeofinfluence.com/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A tree made of sticky notes: brown paper roots and trunk, a canopy of green notes, and a few indigo notes among the leaves.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Example: Product-line technical debt over 2 years","description":"A 90-node strategic tree, built in one planning cycle and updated in the next.","url":"https://treeofinfluence.com/reference/technical-debt/","inLanguage":"en","dateModified":"2026-10-13T04:43:16.000Z","isPartOf":{"@type":"WebSite","@id":"https://treeofinfluence.com/#website","name":"Tree of Influence","url":"https://treeofinfluence.com/","inLanguage":"en"},"license":"https://creativecommons.org/licenses/by/4.0/","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tree of Influence","item":"https://treeofinfluence.com/"},{"@type":"ListItem","position":2,"name":"Reference","item":"https://treeofinfluence.com/reference/"},{"@type":"ListItem","position":3,"name":"Example: Product-line technical debt over 2 years","item":"https://treeofinfluence.com/reference/technical-debt/"}]}}</script>
+  <script src="/js/analytics.js" data-id="G-QKE3RN9DKG" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <section class="consent" aria-label="Analytics cookies" hidden>
+    <p>May this site use Google Analytics cookies to count visits? Nothing is sent to Google unless you accept. <a href="/about/privacy/">Privacy policy</a></p>
+    <p class="consent-buttons"><button type="button" data-consent="granted">Accept</button> <button type="button" data-consent="denied">Decline</button></p>
+  </section>
+  <script>
+    window.analyticsChoice = function () {
+      try {
+        var saved = (localStorage.getItem("analytics-consent") || "").split(" ");
+        return Date.now() - Number(saved[1]) < 395 * 864e5 ? saved[0] : "";
+      } catch (e) { return ""; }
+    };
+    document.querySelector(".consent").hidden = Boolean(analyticsChoice());
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="/"><img class="site-mark" src="/img/tree-mark.svg" alt="" width="32" height="32">Tree of Influence</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quick-start/">Quick Start</a></li>
+          <li><a href="/reference/" aria-current="true">Reference</a></li>
+          <li><a href="/facilitation/">Facilitation</a></li>
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      <form class="site-search" action="/search/" role="search" hidden>
+        <input type="search" name="q" aria-label="Search the site">
+        <button type="submit">Search</button>
+      </form>
+      <script>document.querySelector(".site-search").hidden = false;</script>
+    </div>
+  </header>
+  <div class="page-grid">
+  <nav class="sidebar" aria-label="Reference pages">
+    <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/" aria-current="page">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+  </nav>
+
+  <main id="main" class="content" data-pagefind-body data-pagefind-meta="section:Reference">
+    <details class="section-menu" data-pagefind-ignore>
+      <summary>Menu: Reference</summary>
+      <nav aria-label="Reference pages (menu)">
+        <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/" aria-current="page">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+      </nav>
+      <nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#context">Context</a></li>
+    <li><a href="#goal">Goal</a></li>
+    <li><a href="#how-the-tree-was-built">How the tree was built</a></li>
+    <li><a href="#the-tree">The tree</a></li>
+    <li><a href="#what-it-revealed">What it revealed</a></li>
+    <li><a href="#lessons">Lessons</a></li>
+  </ul>
+</nav>
+
+    </details>
+
+    <h1>Example: Product-line technical debt over 2 years</h1>
+    <p class="page-summary">A 90-node strategic tree, built in one planning cycle and updated in the next.</p>
+
+    
+
+    <h2 id="context">Context</h2>
+<p>A software organization sold a product line of operations software, installed at each customer's site. Over the years, the product line had built up technical debt of many kinds: deployments that were different for every customer, gaps in test coverage, a tightly coupled architecture, slow development, and a growing support burden. Customer confidence was suffering.</p>
+<p>These problems were not separate. Each one made others worse, and together they stood between the organization and what it wanted from the business.</p>
+<h2 id="goal">Goal</h2>
+<p>Connect the technical debt of the whole product line to the business outcomes it was holding back, in one picture, to inform strategy over several years.</p>
+<p>The outcomes on the tree are business goals: a better customer NPS, a better uptime SLA than competitors, more customers on the core product, and more sales of an add-on product.</p>
+<h2 id="how-the-tree-was-built">How the tree was built</h2>
+<p>The tree was built in a digital diagramming tool, as one <a href="/reference/full-tree/">full tree</a> on a single page. It was built in one planning cycle and brought back, updated, in a later one. The 2 versions are called the first year and the second year here.</p>
+<ul>
+<li>Dozens of <a href="/reference/root-problem/">root / problem</a> nodes run in chains toward the <a href="/reference/desired-state-outcome/">desired state / outcome</a> nodes. There are very few plain actions.</li>
+<li>The legend names &quot;half-way problems&quot;: states that are partly a problem and partly progress, such as &quot;Faster deployment process in production.&quot; They play the role of <a href="/reference/action-intervention/">action / intervention</a> nodes.</li>
+<li>Artifacts sit next to what they relate to. <a href="/reference/artifact-deliverable/">Artifact / deliverable</a> nodes are specific technical deliverables: an automated deployment, a shared logging library, an architecture model. Many are placed beside the problem they are meant to resolve.</li>
+<li>Shapes mean nothing. The tree mixes rectangles and sticky notes because the way of adding nodes changed along the way. Everyone read them as the same thing. See <a href="/reference/colors-and-shapes/">colors and shapes</a>.</li>
+</ul>
+<p>Besides the full tree, the document had a page for a <a href="/reference/blocked-outcomes/">blocked outcomes view</a>. It lists every outcome with the 2 to 5 problems that block it.</p>
+<h2 id="the-tree">The tree</h2>
+<aside class="callout callout-note"><p class="callout-label">Note</p><p>The diagram on this page is a simplified, anonymized excerpt of the real tree. The node texts and arrows are a reconstruction that represent how the tree reads, not a copy of every connection.</p> </aside>
+<p>In its second year, the tree has about 90 nodes and 100 arrows. This excerpt shows 14 of them.</p>
+<figure class="diagram" style="max-width:776px;--diagram-min:620px">
+<svg viewBox="0 0 776 1113" width="776" height="1113" role="img" aria-labelledby="cases-debtTree-title cases-debtTree-desc" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+<title id="cases-debtTree-title">Excerpt of the product-line technical debt tree, second year</title>
+<desc id="cases-debtTree-desc">14 nodes and 13 arrows: 8 root / problem, 2 artifact / deliverable, 1 action / intervention, 3 desired state / outcome. A text version follows the diagram.</desc>
+<defs><marker id="cases-debtTree-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F1D1A"/></marker><filter id="cases-debtTree-shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1F1D1A" flood-opacity="0.18"/></filter></defs>
+<g class="dg-zones">
+</g>
+<g class="dg-frames">
+<g data-frame="Deployment">
+<rect x="20" y="196.2" width="364" height="684" rx="6" fill="#F7F5F0" stroke="#D9D4CA" stroke-width="1.5"/>
+<text x="32" y="218.2" font-size="13" font-weight="700" fill="#5C574F">Deployment</text>
+</g>
+<g data-frame="Support and reliability">
+<rect x="392" y="196.2" width="364" height="684" rx="6" fill="#F7F5F0" stroke="#D9D4CA" stroke-width="1.5"/>
+<text x="404" y="218.2" font-size="13" font-weight="700" fill="#5C574F">Support and reliability</text>
+</g>
+</g>
+<g class="dg-nodes">
+<g class="dg-node" data-node="p1" transform="translate(34 762.2)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Deployment</text><text x="12" y="59" font-size="14" fill="#FFFFFF">requires many</text><text x="12" y="76" font-size="14" fill="#FFFFFF">uniquely</text><text x="12" y="93" font-size="14" fill="#FFFFFF">customized steps</text></g></g>
+<g class="dg-node" data-node="d1" transform="translate(220 762.2)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#4A5BAF" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[D]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Automated</text><text x="12" y="59" font-size="14" fill="#FFFFFF">deployment of</text><text x="12" y="76" font-size="14" fill="#FFFFFF">the server</text><text x="12" y="93" font-size="14" fill="#FFFFFF">services</text></g></g>
+<g class="dg-node" data-node="p2" transform="translate(34 586.2)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Each deployment</text><text x="12" y="59" font-size="14" fill="#FFFFFF">is different</text><text x="12" y="76" font-size="14" fill="#FFFFFF">from each other</text></g></g>
+<g class="dg-node" data-node="h1" transform="translate(220 498.2)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Faster</text><text x="12" y="59" font-size="14" fill="#1F1D1A">deployment</text><text x="12" y="76" font-size="14" fill="#1F1D1A">process in</text><text x="12" y="93" font-size="14" fill="#1F1D1A">production</text></g></g>
+<g class="dg-node" data-node="p3" transform="translate(34 410.2)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Unable to test</text><text x="12" y="59" font-size="14" fill="#FFFFFF">all variations</text></g></g>
+<g class="dg-node" data-node="p4" transform="translate(34 234.2)"><g transform="rotate(0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Deployment</text><text x="12" y="59" font-size="14" fill="#FFFFFF">issues are first</text><text x="12" y="76" font-size="14" fill="#FFFFFF">found in</text><text x="12" y="93" font-size="14" fill="#FFFFFF">production</text></g></g>
+<g class="dg-node" data-node="p5" transform="translate(406 762.2)"><g transform="rotate(0 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Some bugs are</text><text x="12" y="59" font-size="14" fill="#FFFFFF">actually new</text><text x="12" y="76" font-size="14" fill="#FFFFFF">feature requests</text></g></g>
+<g class="dg-node" data-node="p6" transform="translate(592 762.2)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Cases reach tier</text><text x="12" y="59" font-size="14" fill="#FFFFFF">3 with 50 or</text><text x="12" y="76" font-size="14" fill="#FFFFFF">more comments</text></g></g>
+<g class="dg-node" data-node="p7" transform="translate(499 498.2)"><g transform="rotate(0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">High support</text><text x="12" y="59" font-size="14" fill="#FFFFFF">burden</text></g></g>
+<g class="dg-node" data-node="p8" transform="translate(406 234.2)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Low customer</text><text x="12" y="59" font-size="14" fill="#FFFFFF">confidence</text></g></g>
+<g class="dg-node" data-node="d2" transform="translate(592 234.2)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#4A5BAF" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[D]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">SLIs and SLOs</text><text x="12" y="59" font-size="14" fill="#FFFFFF">for availability</text></g></g>
+<g class="dg-node" data-node="o1" transform="translate(220 23)"><g transform="rotate(1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">More customers</text><text x="12" y="59" font-size="14" fill="#FFFFFF">on the core</text><text x="12" y="76" font-size="14" fill="#FFFFFF">product</text></g></g>
+<g class="dg-node" data-node="o2" transform="translate(406 23)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Better customer</text><text x="12" y="59" font-size="14" fill="#FFFFFF">NPS</text></g></g>
+<g class="dg-node" data-node="o3" transform="translate(592 23)"><g transform="rotate(0 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#cases-debtTree-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Better uptime</text><text x="12" y="59" font-size="14" fill="#FFFFFF">SLA than</text><text x="12" y="76" font-size="14" fill="#FFFFFF">competitors</text></g></g>
+</g>
+<g class="dg-edges">
+<path class="dg-edge" data-edge="p1&gt;p2&gt;influences" d="M109,757.2 Q116.2,726.7 109,696.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p2&gt;p3&gt;influences" d="M109,581.2 Q116.2,550.7 109,520.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p3&gt;p4&gt;influences" d="M109,405.2 Q116.2,374.7 109,344.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="d1&gt;p1&gt;attacks" d="M215,814.2 Q202.5,810.6 190,814.2" fill="none" stroke="#1F1D1A" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 6" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="d1&gt;h1&gt;influences" d="M295,757.2 Q311,682.7 295,608.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="h1&gt;o1&gt;influences" d="M295,493.2 Q332.1,313.1 295,133" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p5&gt;p7&gt;influences" d="M501,757.5 Q543.3,688.3 553.7,607.9" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p6&gt;p7&gt;influences" d="M647,757.5 Q636.7,677 594.3,607.9" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p7&gt;p8&gt;influences" d="M554,493.5 Q543.7,413 501.3,343.9" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p4&gt;p8&gt;influences" d="M189,286.2 Q294.5,308.4 400,286.2" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p8&gt;o1&gt;blocks" d="M431.9,230.4 Q399.1,171.5 344.8,131.5" fill="none" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="9 6" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="p8&gt;o2&gt;blocks" d="M481,229.2 Q491.7,181.1 481,133" fill="none" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="9 6" marker-end="url(#cases-debtTree-arrow)"/>
+<path class="dg-edge" data-edge="d2&gt;o3&gt;influences" d="M667,229.2 Q677.7,181.1 667,133" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+</g>
+<g class="dg-legend">
+<rect x="20" y="898.2" width="736" height="194" rx="4" fill="#F7F5F0" stroke="#5C574F"/>
+<text x="36" y="922.2" font-size="14" font-weight="700" fill="#1F1D1A">Legend</text>
+<rect x="36" y="938.2" width="15" height="15" rx="2" fill="#6B3A2A"/>
+<text x="60" y="950.2" font-size="14" fill="#1F1D1A">[P] Root / Problem</text>
+<rect x="222.6" y="938.2" width="15" height="15" rx="2" fill="#D97706"/>
+<text x="246.6" y="950.2" font-size="14" fill="#1F1D1A">[A] Action / Intervention</text>
+<rect x="463.1" y="938.2" width="15" height="15" rx="2" fill="#2D7D46"/>
+<text x="487.1" y="950.2" font-size="14" fill="#1F1D1A">[O] Desired State / Outcome</text>
+<rect x="36" y="964.2" width="15" height="15" rx="2" fill="#4A5BAF"/>
+<text x="60" y="976.2" font-size="14" fill="#1F1D1A">[D] Artifact / Deliverable</text>
+<path d="M284.2,971.2 L316.2,971.2" stroke="#1F1D1A" stroke-width="2" marker-end="url(#cases-debtTree-arrow)"/>
+<text x="332.2" y="976.2" font-size="14" fill="#1F1D1A">Influences</text>
+<path d="M433.2,971.2 L465.2,971.2" stroke="#1F1D1A" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#cases-debtTree-arrow)"/>
+<text x="481.2" y="976.2" font-size="14" fill="#1F1D1A">Blocks / Impedes</text>
+<path d="M36,997.2 L68,997.2" stroke="#1F1D1A" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 5" marker-end="url(#cases-debtTree-arrow)"/>
+<text x="84" y="1002.2" font-size="14" fill="#1F1D1A">Attacks</text>
+<text x="36" y="1030.2" font-size="14" fill="#1F1D1A">Flow: roots (bottom) → outcomes (top).</text>
+<text x="36" y="1050.2" font-size="14" fill="#1F1D1A">Context: the technical debt of a product line, second year. An anonymized excerpt of about</text>
+<text x="36" y="1070.2" font-size="14" fill="#1F1D1A">90 nodes.</text>
+</g>
+</svg>
+<figcaption>14 of about 90 nodes. Frames group the nodes by area, artifacts sit next to what they relate to, and the outcomes line up at the top.</figcaption>
+</figure>
+<details class="diagram-text"><summary>Diagram as text: Excerpt of the product-line technical debt tree, second year</summary><p>Nodes:</p><ul><li>Root / Problem: "Deployment requires many uniquely customized steps" (in &quot;Deployment&quot;)</li><li>Root / Problem: "Each deployment is different from each other" (in &quot;Deployment&quot;)</li><li>Root / Problem: "Unable to test all variations" (in &quot;Deployment&quot;)</li><li>Root / Problem: "Deployment issues are first found in production" (in &quot;Deployment&quot;)</li><li>Root / Problem: "Some bugs are actually new feature requests" (in &quot;Support and reliability&quot;)</li><li>Root / Problem: "Cases reach tier 3 with 50 or more comments" (in &quot;Support and reliability&quot;)</li><li>Root / Problem: "High support burden" (in &quot;Support and reliability&quot;)</li><li>Root / Problem: "Low customer confidence" (in &quot;Support and reliability&quot;)</li><li>Action / Intervention: "Faster deployment process in production" (in &quot;Deployment&quot;)</li><li>Desired State / Outcome: "More customers on the core product"</li><li>Desired State / Outcome: "Better customer NPS"</li><li>Desired State / Outcome: "Better uptime SLA than competitors"</li><li>Artifact / Deliverable: "Automated deployment of the server services" (in &quot;Deployment&quot;)</li><li>Artifact / Deliverable: "SLIs and SLOs for availability" (in &quot;Support and reliability&quot;)</li></ul><p>Arrows:</p><ul><li>"Deployment requires many uniquely customized steps" influences "Each deployment is different from each other"</li><li>"Each deployment is different from each other" influences "Unable to test all variations"</li><li>"Unable to test all variations" influences "Deployment issues are first found in production"</li><li>"Automated deployment of the server services" attacks "Deployment requires many uniquely customized steps"</li><li>"Automated deployment of the server services" influences "Faster deployment process in production"</li><li>"Faster deployment process in production" influences "More customers on the core product"</li><li>"Some bugs are actually new feature requests" influences "High support burden"</li><li>"Cases reach tier 3 with 50 or more comments" influences "High support burden"</li><li>"High support burden" influences "Low customer confidence"</li><li>"Deployment issues are first found in production" influences "Low customer confidence"</li><li>"Low customer confidence" blocks "More customers on the core product"</li><li>"Low customer confidence" blocks "Better customer NPS"</li><li>"SLIs and SLOs for availability" influences "Better uptime SLA than competitors"</li></ul></details>
+<p>Read the left column from the bottom. Every deployment needs its own customized steps, so every deployment is different, so nobody can test all the variations, so deployment issues are found for the first time in production. Each node on its own was well known. The chain was surfaced by the exercise and discussion facilitated by the tree.</p>
+<h3 id="from-the-first-year-to-the-second">From the first year to the second</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>First year</th>
+<th>Second year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problems</td>
+<td>Dozens, across the whole product line</td>
+<td>Most persist. Very few are removed. New ones appear, about development paid for by customers and about how to justify improving existing features</td>
+</tr>
+<tr>
+<td>Relationships in the legend</td>
+<td><a href="/reference/influences/">Influences</a> and <a href="/reference/blocks-impedes/">blocks / impedes</a></td>
+<td>The same 2, plus <a href="/reference/attacks/">attacks</a></td>
+</tr>
+<tr>
+<td>Artifacts</td>
+<td>Also drawn in a separate artifacts tree, on its own page</td>
+<td>In the full tree only. The separate tree is kept, marked frozen and obsolete</td>
+</tr>
+<tr>
+<td>Arrows</td>
+<td>As first drawn</td>
+<td>Several removed and redrawn as understanding shifted</td>
+</tr>
+</tbody>
+</table>
+<p>The second-year tree also has a parking lot, a frame for nodes that do not fit yet.</p>
+<h2 id="what-it-revealed">What it revealed</h2>
+<ul>
+<li>Technical problems reach business outcomes. A customized deployment step is a long way from customer NPS. The tree shows the path between them, one arrow at a time.</li>
+<li>Most of the first year's problems are still on the tree in the second year. That says as much about the nature of the problems as about the work done in between.</li>
+<li>The first-year legend has no attacks relationship. It appeared in the second year, once artifacts sat in the full tree next to the problems they target.</li>
+<li>Artifacts were first organized in a tree of their own. That was abandoned, and the artifacts moved into the full tree. The old page was kept, clearly marked, as part of the tree's history.</li>
+</ul>
+<h2 id="lessons">Lessons</h2>
+<ul>
+<li><strong>Clustering keeps a large tree readable.</strong> About 90 nodes on one page is the largest tree observed so far that stayed usable. It stayed usable because related nodes sit together in frames. See <a href="/reference/runaway-scale/">runaway scale</a>.</li>
+<li><strong>A complete legend lets the tree speak for itself.</strong> This tree can be read by someone who was not there when it was built, because its legend names every node type and arrow style in use.</li>
+<li><strong>Removal needs attention.</strong> Very few nodes left the tree between versions. Some problems truly persisted. Others may have stayed because nobody asked whether they were still true. Make that question a step of every update. See <a href="/reference/living-document/#removal-needs-attention">a living document</a>.</li>
+<li><strong>Let the notation grow from need.</strong> Add a relationship when the group keeps reaching for it, not in advance, and update the legend when it happens.</li>
+<li><strong>Mark dead ends instead of deleting them.</strong> A page marked frozen and obsolete tells the next reader that the idea was tried, and saves them from trying it again.</li>
+<li><strong>Some nodes stay ambiguous.</strong> &quot;Faster deployment process in production&quot; reads as an outcome or as an implied action. That is acceptable. What matters is the balance of the whole tree.</li>
+</ul>
+
+
+    
+
+    
+    <section class="related" aria-labelledby="related-heading" data-pagefind-ignore>
+      <h2 id="related-heading">Related</h2>
+      <ul>
+        <li><a href="/reference/living-document/">A living document</a></li>
+        <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+        <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+        <li><a href="/reference/attacks/">Attacks</a></li>
+        <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+      </ul>
+    </section>
+    
+
+    
+    <nav class="pager" aria-label="Previous and next pages" data-pagefind-ignore>
+      <a class="pager-previous" href="/reference/team-delivery/"><span>Previous</span>Example: Team delivery gaps</a>
+      <a class="pager-next" href="/reference/renewals/"><span>Next</span>Example: Why large customers are not renewing</a>
+    </nav>
+    
+  </main>
+
+  
+  <aside class="toc-column"><nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#context">Context</a></li>
+    <li><a href="#goal">Goal</a></li>
+    <li><a href="#how-the-tree-was-built">How the tree was built</a></li>
+    <li><a href="#the-tree">The tree</a></li>
+    <li><a href="#what-it-revealed">What it revealed</a></li>
+    <li><a href="#lessons">Lessons</a></li>
+  </ul>
+</nav>
+</aside>
+  
+</div>
+
+  <footer class="site-footer">
+    <p>&copy; Paulo Queiroga and contributors. Text and diagrams licensed under <a href="/about/license/">CC BY 4.0</a>. <a href="/about/privacy/">Privacy</a></p>
+  </footer>
+  <script src="/js/steps.js" defer></script>
+</body>
+</html>

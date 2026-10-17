@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deep-dive sub-tree | Tree of Influence</title>
+  <meta name="description" content="One node decomposed into its own tree.">
+  <link rel="canonical" href="https://treeofinfluence.com/reference/deep-dive/">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/img/tree-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Tree of Influence">
+  <meta property="og:title" content="Deep-dive sub-tree">
+  <meta property="og:description" content="One node decomposed into its own tree.">
+  <meta property="og:url" content="https://treeofinfluence.com/reference/deep-dive/">
+  <meta property="og:image" content="https://treeofinfluence.com/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A tree made of sticky notes: brown paper roots and trunk, a canopy of green notes, and a few indigo notes among the leaves.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Deep-dive sub-tree","description":"One node decomposed into its own tree.","url":"https://treeofinfluence.com/reference/deep-dive/","inLanguage":"en","dateModified":"2026-10-13T04:43:16.000Z","isPartOf":{"@type":"WebSite","@id":"https://treeofinfluence.com/#website","name":"Tree of Influence","url":"https://treeofinfluence.com/","inLanguage":"en"},"license":"https://creativecommons.org/licenses/by/4.0/","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tree of Influence","item":"https://treeofinfluence.com/"},{"@type":"ListItem","position":2,"name":"Reference","item":"https://treeofinfluence.com/reference/"},{"@type":"ListItem","position":3,"name":"Deep-dive sub-tree","item":"https://treeofinfluence.com/reference/deep-dive/"}]}}</script>
+  <script src="/js/analytics.js" data-id="G-QKE3RN9DKG" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <section class="consent" aria-label="Analytics cookies" hidden>
+    <p>May this site use Google Analytics cookies to count visits? Nothing is sent to Google unless you accept. <a href="/about/privacy/">Privacy policy</a></p>
+    <p class="consent-buttons"><button type="button" data-consent="granted">Accept</button> <button type="button" data-consent="denied">Decline</button></p>
+  </section>
+  <script>
+    window.analyticsChoice = function () {
+      try {
+        var saved = (localStorage.getItem("analytics-consent") || "").split(" ");
+        return Date.now() - Number(saved[1]) < 395 * 864e5 ? saved[0] : "";
+      } catch (e) { return ""; }
+    };
+    document.querySelector(".consent").hidden = Boolean(analyticsChoice());
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="/"><img class="site-mark" src="/img/tree-mark.svg" alt="" width="32" height="32">Tree of Influence</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quick-start/">Quick Start</a></li>
+          <li><a href="/reference/" aria-current="true">Reference</a></li>
+          <li><a href="/facilitation/">Facilitation</a></li>
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      <form class="site-search" action="/search/" role="search" hidden>
+        <input type="search" name="q" aria-label="Search the site">
+        <button type="submit">Search</button>
+      </form>
+      <script>document.querySelector(".site-search").hidden = false;</script>
+    </div>
+  </header>
+  <div class="page-grid">
+  <nav class="sidebar" aria-label="Reference pages">
+    <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/" aria-current="page">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+  </nav>
+
+  <main id="main" class="content" data-pagefind-body data-pagefind-meta="section:Reference">
+    <details class="section-menu" data-pagefind-ignore>
+      <summary>Menu: Reference</summary>
+      <nav aria-label="Reference pages (menu)">
+        <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/" aria-current="page">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+      </nav>
+      <nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#purpose">Purpose</a></li>
+    <li><a href="#when-to-create-it">When to create it</a></li>
+    <li><a href="#what-it-contains">What it contains</a></li>
+    <li><a href="#how-it-relates-to-the-full-tree">How it relates to the full tree</a></li>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#when-you-dont-need-it">When you don't need it</a></li>
+  </ul>
+</nav>
+
+    </details>
+
+    <h1>Deep-dive sub-tree</h1>
+    <p class="page-summary">One node decomposed into its own tree.</p>
+
+    
+
+    <h2 id="purpose">Purpose</h2>
+<p>Zoom into one node of the full tree and give it its own tree: its causes, its parts, its sub-problems, or what solving it would take.</p>
+<h2 id="when-to-create-it">When to create it</h2>
+<ul>
+<li>A node is a complex decision that needs its own analysis.</li>
+<li>A problem is big enough to deserve its own mapping session.</li>
+<li>A subgroup has taken ownership of an area and needs space to work without disturbing the full tree.</li>
+</ul>
+<p>These usually come up during <a href="/facilitation/decompose/">Decompose</a>.</p>
+<h2 id="what-it-contains">What it contains</h2>
+<ul>
+<li>A header: &quot;Deep Dive,&quot; followed by the name of the node being decomposed.</li>
+<li>The parent node, at the entry point of the sub-tree, drawn with a bold double border to mark that it comes from the full tree.</li>
+<li>The sub-tree around it: causes, components, or whatever the analysis needs.</li>
+</ul>
+<p>A deep dive may use node types or arrow styles that the full tree does not. If it does, its own legend explains them.</p>
+<figure class="diagram" style="max-width:606px;--diagram-min:606px">
+<svg viewBox="0 0 606 684" width="606" height="684" role="img" aria-labelledby="onboarding-deepDive-title onboarding-deepDive-desc" xmlns="http://www.w3.org/2000/svg" font-family="inherit">
+<title id="onboarding-deepDive-title">Deep dive on a problem from the onboarding tree</title>
+<desc id="onboarding-deepDive-desc">6 nodes and 6 arrows: 4 root / problem, 1 action / intervention, 1 desired state / outcome. A text version follows the diagram.</desc>
+<defs><marker id="onboarding-deepDive-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F1D1A"/></marker><filter id="onboarding-deepDive-shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1F1D1A" flood-opacity="0.18"/></filter></defs>
+<text x="20" y="38" font-size="17" font-weight="700" fill="#1F1D1A">Deep Dive: New hires are afraid to ask questions</text>
+<g class="dg-zones">
+</g>
+<g class="dg-frames">
+</g>
+<g class="dg-nodes">
+<g class="dg-node" data-node="c1" transform="translate(23.4 411)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-deepDive-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Questions in</text><text x="12" y="59" font-size="14" fill="#FFFFFF">public channels</text><text x="12" y="76" font-size="14" fill="#FFFFFF">go unanswered</text></g></g>
+<g class="dg-node" data-node="c2" transform="translate(209.4 411)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-deepDive-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Past questions</text><text x="12" y="59" font-size="14" fill="#FFFFFF">were met with</text><text x="12" y="76" font-size="14" fill="#FFFFFF">impatience</text></g></g>
+<g class="dg-node" data-node="c3" transform="translate(395.4 411)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-deepDive-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">No one is</text><text x="12" y="59" font-size="14" fill="#FFFFFF">assigned to help</text></g></g>
+<g class="dg-node" data-node="p4" transform="translate(209.4 235)"><g transform="rotate(-0.45 75 52)"><rect x="-6" y="-6" width="162" height="116" rx="7" fill="none" stroke="#1F1D1A" stroke-width="2.5"/><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#onboarding-deepDive-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">New hires are</text><text x="12" y="59" font-size="14" fill="#FFFFFF">afraid to ask</text><text x="12" y="76" font-size="14" fill="#FFFFFF">questions</text></g></g>
+<g class="dg-node" data-node="x1" transform="translate(432.6 235)"><g transform="rotate(-0.9 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#onboarding-deepDive-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Hold a weekly</text><text x="12" y="59" font-size="14" fill="#1F1D1A">open question</text><text x="12" y="76" font-size="14" fill="#1F1D1A">hour</text></g></g>
+<g class="dg-node" data-node="x2" transform="translate(321 59)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#onboarding-deepDive-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Every question</text><text x="12" y="59" font-size="14" fill="#FFFFFF">gets an answer</text><text x="12" y="76" font-size="14" fill="#FFFFFF">within a day</text></g></g>
+</g>
+<g class="dg-edges">
+<path class="dg-edge" data-edge="c1&gt;p4&gt;influences" d="M157,407.6 Q193.8,385.7 217.7,350.1" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-deepDive-arrow)"/>
+<path class="dg-edge" data-edge="c2&gt;p4&gt;influences" d="M284.4,406 Q290.9,379 284.4,352" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-deepDive-arrow)"/>
+<path class="dg-edge" data-edge="c3&gt;p4&gt;influences" d="M411.8,407.6 Q388,372 351.1,350.1" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-deepDive-arrow)"/>
+<path class="dg-edge" data-edge="c3&gt;x1&gt;influences" d="M482.4,406.1 Q496.1,377 495.4,344.9" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-deepDive-arrow)"/>
+<path class="dg-edge" data-edge="p4&gt;x2&gt;influences" d="M324.5,223.8 Q348.7,200 359.8,168.1" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-deepDive-arrow)"/>
+<path class="dg-edge" data-edge="x1&gt;x2&gt;influences" d="M471.9,230.8 Q459.3,194.9 432.2,168.1" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#onboarding-deepDive-arrow)"/>
+</g>
+<g class="dg-legend">
+<rect x="20" y="536" width="566" height="128" rx="4" fill="#F7F5F0" stroke="#5C574F"/>
+<text x="36" y="560" font-size="14" font-weight="700" fill="#1F1D1A">Legend</text>
+<rect x="36" y="576" width="15" height="15" rx="2" fill="#6B3A2A"/>
+<text x="60" y="588" font-size="14" fill="#1F1D1A">[P] Root / Problem</text>
+<rect x="222.6" y="576" width="15" height="15" rx="2" fill="#D97706"/>
+<text x="246.6" y="588" font-size="14" fill="#1F1D1A">[A] Action / Intervention</text>
+<rect x="36" y="602" width="15" height="15" rx="2" fill="#2D7D46"/>
+<text x="60" y="614" font-size="14" fill="#1F1D1A">[O] Desired State / Outcome</text>
+<rect x="291.9" y="601" width="15" height="15" rx="2" fill="none" stroke="#1F1D1A" stroke-width="2.5"/>
+<text x="315.9" y="614" font-size="14" fill="#1F1D1A">Node from the full tree</text>
+<text x="36" y="642" font-size="14" fill="#1F1D1A">Flow: roots (bottom) → outcomes (top).</text>
+</g>
+</svg>
+</figure>
+<details class="diagram-text"><summary>Diagram as text: Deep dive on a problem from the onboarding tree</summary><p>Nodes:</p><ul><li>Root / Problem: "Questions in public channels go unanswered"</li><li>Root / Problem: "Past questions were met with impatience"</li><li>Root / Problem: "No one is assigned to help"</li><li>Root / Problem: "New hires are afraid to ask questions" (node from the full tree)</li><li>Action / Intervention: "Hold a weekly open question hour"</li><li>Desired State / Outcome: "Every question gets an answer within a day"</li></ul><p>Arrows:</p><ul><li>"Questions in public channels go unanswered" influences "New hires are afraid to ask questions"</li><li>"Past questions were met with impatience" influences "New hires are afraid to ask questions"</li><li>"No one is assigned to help" influences "New hires are afraid to ask questions"</li><li>"No one is assigned to help" influences "Hold a weekly open question hour"</li><li>"New hires are afraid to ask questions" influences "Every question gets an answer within a day"</li><li>"Hold a weekly open question hour" influences "Every question gets an answer within a day"</li></ul></details>
+<h2 id="how-it-relates-to-the-full-tree">How it relates to the full tree</h2>
+<p>It supplements the parent node; it does not replace it. The node stays in the full tree, ideally with a link or comment pointing to the deep dive: &quot;see Deep Dive: New hires are afraid to ask questions.&quot;</p>
+<h2 id="example">Example</h2>
+<p>In the <a href="/reference/team-delivery/">team delivery gaps</a> tree, the action &quot;Assign a tech lead with a proven track record&quot; became a deep dive that mapped the role's required characteristics, the strengths and weaknesses of candidates, and the role's key responsibilities. The group used it to make a hiring decision.</p>
+<h2 id="when-you-dont-need-it">When you don't need it</h2>
+<p>Most nodes never need one. Deep-dive only the few nodes where understanding is weakest and the stakes are highest. Decomposing every node turns the technique into an endless recursion.</p>
+
+
+    
+
+    
+    <section class="related" aria-labelledby="related-heading" data-pagefind-ignore>
+      <h2 id="related-heading">Related</h2>
+      <ul>
+        <li><a href="/reference/full-tree/">Full tree</a></li>
+        <li><a href="/facilitation/decompose/">Decompose</a></li>
+        <li><a href="/facilitation/zoom-pattern/">Zoom pattern</a></li>
+        <li><a href="/facilitation/deep-dive-sessions/">Running a deep-dive session</a></li>
+      </ul>
+    </section>
+    
+
+    
+    <nav class="pager" aria-label="Previous and next pages" data-pagefind-ignore>
+      <a class="pager-previous" href="/reference/blocked-outcomes/"><span>Previous</span>Blocked outcomes view</a>
+      <a class="pager-next" href="/reference/solution-dumping/"><span>Next</span>Solution-dumping</a>
+    </nav>
+    
+  </main>
+
+  
+  <aside class="toc-column"><nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#purpose">Purpose</a></li>
+    <li><a href="#when-to-create-it">When to create it</a></li>
+    <li><a href="#what-it-contains">What it contains</a></li>
+    <li><a href="#how-it-relates-to-the-full-tree">How it relates to the full tree</a></li>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#when-you-dont-need-it">When you don't need it</a></li>
+  </ul>
+</nav>
+</aside>
+  
+</div>
+
+  <footer class="site-footer">
+    <p>&copy; Paulo Queiroga and contributors. Text and diagrams licensed under <a href="/about/license/">CC BY 4.0</a>. <a href="/about/privacy/">Privacy</a></p>
+  </footer>
+  <script src="/js/steps.js" defer></script>
+</body>
+</html>

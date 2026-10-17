@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessibility considerations | Tree of Influence</title>
+  <meta name="description" content="How to keep a tree readable for everyone, including people who cannot rely on color.">
+  <link rel="canonical" href="https://treeofinfluence.com/reference/accessibility/">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/img/tree-mark.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Tree of Influence">
+  <meta property="og:title" content="Accessibility considerations">
+  <meta property="og:description" content="How to keep a tree readable for everyone, including people who cannot rely on color.">
+  <meta property="og:url" content="https://treeofinfluence.com/reference/accessibility/">
+  <meta property="og:image" content="https://treeofinfluence.com/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A tree made of sticky notes: brown paper roots and trunk, a canopy of green notes, and a few indigo notes among the leaves.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Accessibility considerations","description":"How to keep a tree readable for everyone, including people who cannot rely on color.","url":"https://treeofinfluence.com/reference/accessibility/","inLanguage":"en","dateModified":"2026-10-11T03:39:08.000Z","isPartOf":{"@type":"WebSite","@id":"https://treeofinfluence.com/#website","name":"Tree of Influence","url":"https://treeofinfluence.com/","inLanguage":"en"},"license":"https://creativecommons.org/licenses/by/4.0/","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tree of Influence","item":"https://treeofinfluence.com/"},{"@type":"ListItem","position":2,"name":"Reference","item":"https://treeofinfluence.com/reference/"},{"@type":"ListItem","position":3,"name":"Accessibility considerations","item":"https://treeofinfluence.com/reference/accessibility/"}]}}</script>
+  <script src="/js/analytics.js" data-id="G-QKE3RN9DKG" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <section class="consent" aria-label="Analytics cookies" hidden>
+    <p>May this site use Google Analytics cookies to count visits? Nothing is sent to Google unless you accept. <a href="/about/privacy/">Privacy policy</a></p>
+    <p class="consent-buttons"><button type="button" data-consent="granted">Accept</button> <button type="button" data-consent="denied">Decline</button></p>
+  </section>
+  <script>
+    window.analyticsChoice = function () {
+      try {
+        var saved = (localStorage.getItem("analytics-consent") || "").split(" ");
+        return Date.now() - Number(saved[1]) < 395 * 864e5 ? saved[0] : "";
+      } catch (e) { return ""; }
+    };
+    document.querySelector(".consent").hidden = Boolean(analyticsChoice());
+  </script>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="/"><img class="site-mark" src="/img/tree-mark.svg" alt="" width="32" height="32">Tree of Influence</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quick-start/">Quick Start</a></li>
+          <li><a href="/reference/" aria-current="true">Reference</a></li>
+          <li><a href="/facilitation/">Facilitation</a></li>
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+      <form class="site-search" action="/search/" role="search" hidden>
+        <input type="search" name="q" aria-label="Search the site">
+        <button type="submit">Search</button>
+      </form>
+      <script>document.querySelector(".site-search").hidden = false;</script>
+    </div>
+  </header>
+  <div class="page-grid">
+  <nav class="sidebar" aria-label="Reference pages">
+    <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/" aria-current="page">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+  </nav>
+
+  <main id="main" class="content" data-pagefind-body data-pagefind-meta="section:Reference">
+    <details class="section-menu" data-pagefind-ignore>
+      <summary>Menu: Reference</summary>
+      <nav aria-label="Reference pages (menu)">
+        <p class="sidebar-title"><a href="/reference/">Reference</a></p>
+<p class="sidebar-group">Basics</p>
+<ul>
+  <li><a href="/reference/minimum-viable-tree/">Minimum viable tree</a></li>
+  <li><a href="/reference/scope/">What it is and is not</a></li>
+</ul>
+<p class="sidebar-group">Node types</p>
+<ul>
+  <li><a href="/reference/root-problem/">Root / Problem</a></li>
+  <li><a href="/reference/action-intervention/">Action / Intervention</a></li>
+  <li><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></li>
+  <li><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></li>
+</ul>
+<p class="sidebar-group">Relationships</p>
+<ul>
+  <li><a href="/reference/influences/">Influences</a></li>
+  <li><a href="/reference/blocks-impedes/">Blocks / Impedes</a></li>
+  <li><a href="/reference/attacks/">Attacks</a></li>
+  <li><a href="/reference/graph-shape/">Cycles and graph shape</a></li>
+</ul>
+<p class="sidebar-group">Notation</p>
+<ul>
+  <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+  <li><a href="/reference/arrow-styles/">Arrow styles</a></li>
+  <li><a href="/reference/legend/">The legend</a></li>
+  <li><a href="/reference/orientation/">Orientation</a></li>
+  <li><a href="/reference/accessibility/" aria-current="page">Accessibility considerations</a></li>
+</ul>
+<p class="sidebar-group">Views</p>
+<ul>
+  <li><a href="/reference/full-tree/">Full tree</a></li>
+  <li><a href="/reference/blocked-outcomes/">Blocked outcomes view</a></li>
+  <li><a href="/reference/deep-dive/">Deep-dive sub-tree</a></li>
+</ul>
+<p class="sidebar-group">Anti-patterns</p>
+<ul>
+  <li><a href="/reference/solution-dumping/">Solution-dumping</a></li>
+  <li><a href="/reference/the-shortcut/">The shortcut</a></li>
+  <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+</ul>
+<p class="sidebar-group">More</p>
+<ul>
+  <li><a href="/reference/principles/">Core principles</a></li>
+  <li><a href="/reference/living-document/">A living document</a></li>
+  <li><a href="/reference/ai/">Using a tree with AI</a></li>
+  <li><a href="/reference/team-delivery/">Example: Team delivery gaps</a></li>
+  <li><a href="/reference/technical-debt/">Example: Product-line technical debt over 2 years</a></li>
+  <li><a href="/reference/renewals/">Example: Why large customers are not renewing</a></li>
+</ul>
+
+      </nav>
+      <nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#why-it-matters">Why it matters</a></li>
+    <li><a href="#text-markers">Text markers</a></li>
+    <li><a href="#shape-variants">Shape variants</a></li>
+    <li><a href="#text-contrast">Text contrast</a></li>
+    <li><a href="#sharing-a-tree">Sharing a tree</a></li>
+    <li><a href="#how-the-accessibility-layer-works">How the accessibility layer works</a></li>
+    <li><a href="#still-being-explored">Still being explored</a></li>
+  </ul>
+</nav>
+
+    </details>
+
+    <h1>Accessibility considerations</h1>
+    <p class="page-summary">How to keep a tree readable for everyone, including people who cannot rely on color.</p>
+
+    
+
+    <h2 id="why-it-matters">Why it matters</h2>
+<p>The standard notation tells node types apart by color. Color is fast, but it is not available to everyone:</p>
+<ul>
+<li>Color vision deficiency affects roughly 1 in 12 men and 1 in 200 women. The most common forms confuse reds, browns, greens, and oranges, which are exactly the colors of roots, branches, and leaves.</li>
+<li>Grayscale printing turns every color into a shade of gray.</li>
+<li>Projectors, screens, and tools shift colors, sometimes enough to make two types look alike.</li>
+</ul>
+<p>Here is the same small tree, in grayscale, without and with text markers:</p>
+<figure class="diagram" style="max-width:400px;--diagram-min:400px">
+<svg viewBox="0 0 400 726" width="400" height="726" role="img" aria-labelledby="notation-grayWithoutMarkers-title notation-grayWithoutMarkers-desc" xmlns="http://www.w3.org/2000/svg" font-family="inherit" style="filter:grayscale(1)">
+<title id="notation-grayWithoutMarkers-title">A tree in grayscale, without text markers</title>
+<desc id="notation-grayWithoutMarkers-desc">5 nodes and 4 arrows: 2 root / problem, 1 action / intervention, 1 artifact / deliverable, 1 desired state / outcome. A text version follows the diagram.</desc>
+<defs><marker id="notation-grayWithoutMarkers-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F1D1A"/></marker><filter id="notation-grayWithoutMarkers-shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1F1D1A" flood-opacity="0.18"/></filter></defs>
+<g class="dg-zones">
+</g>
+<g class="dg-frames">
+</g>
+<g class="dg-nodes">
+<g class="dg-node" data-node="p1" transform="translate(32 375)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#notation-grayWithoutMarkers-shadow)"/><text x="12" y="30" font-size="14" fill="#FFFFFF">Documentation is</text><text x="12" y="47" font-size="14" fill="#FFFFFF">out of date</text></g></g>
+<g class="dg-node" data-node="p2" transform="translate(218 375)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#notation-grayWithoutMarkers-shadow)"/><text x="12" y="30" font-size="14" fill="#FFFFFF">Setting up a</text><text x="12" y="47" font-size="14" fill="#FFFFFF">laptop takes a</text><text x="12" y="64" font-size="14" fill="#FFFFFF">week</text></g></g>
+<g class="dg-node" data-node="a1" transform="translate(32 199)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#notation-grayWithoutMarkers-shadow)"/><text x="12" y="30" font-size="14" fill="#1F1D1A">Write a one-page</text><text x="12" y="47" font-size="14" fill="#1F1D1A">starter guide</text></g></g>
+<g class="dg-node" data-node="d1" transform="translate(218 199)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#4A5BAF" filter="url(#notation-grayWithoutMarkers-shadow)"/><text x="12" y="30" font-size="14" fill="#FFFFFF">Laptop setup</text><text x="12" y="47" font-size="14" fill="#FFFFFF">script</text></g></g>
+<g class="dg-node" data-node="o1" transform="translate(125 23)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#notation-grayWithoutMarkers-shadow)"/><text x="12" y="30" font-size="14" fill="#FFFFFF">New hires ship</text><text x="12" y="47" font-size="14" fill="#FFFFFF">something in</text><text x="12" y="64" font-size="14" fill="#FFFFFF">their first</text><text x="12" y="81" font-size="14" fill="#FFFFFF">month</text></g></g>
+</g>
+<g class="dg-edges">
+<path class="dg-edge" data-edge="p1&gt;a1&gt;influences" d="M107,370 Q114.2,339.5 107,309" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithoutMarkers-arrow)"/>
+<path class="dg-edge" data-edge="a1&gt;o1&gt;influences" d="M136.8,194.6 Q160.5,167.2 169.7,132.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithoutMarkers-arrow)"/>
+<path class="dg-edge" data-edge="d1&gt;o1&gt;influences" d="M263.2,194.6 Q253.9,159.6 230.3,132.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithoutMarkers-arrow)"/>
+<path class="dg-edge" data-edge="d1&gt;p2&gt;attacks" d="M293,308 Q285.8,338.5 293,369" fill="none" stroke="#1F1D1A" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 6" marker-end="url(#notation-grayWithoutMarkers-arrow)"/>
+</g>
+<g class="dg-legend">
+<rect x="20" y="500" width="360" height="206" rx="4" fill="#F7F5F0" stroke="#5C574F"/>
+<text x="36" y="524" font-size="14" font-weight="700" fill="#1F1D1A">Legend</text>
+<rect x="36" y="540" width="15" height="15" rx="2" fill="#6B3A2A"/>
+<text x="60" y="552" font-size="14" fill="#1F1D1A">Root / Problem</text>
+<rect x="36" y="566" width="15" height="15" rx="2" fill="#D97706"/>
+<text x="60" y="578" font-size="14" fill="#1F1D1A">Action / Intervention</text>
+<rect x="36" y="592" width="15" height="15" rx="2" fill="#2D7D46"/>
+<text x="60" y="604" font-size="14" fill="#1F1D1A">Desired State / Outcome</text>
+<rect x="36" y="618" width="15" height="15" rx="2" fill="#4A5BAF"/>
+<text x="60" y="630" font-size="14" fill="#1F1D1A">Artifact / Deliverable</text>
+<path d="M36,651 L68,651" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithoutMarkers-arrow)"/>
+<text x="84" y="656" font-size="14" fill="#1F1D1A">Influences</text>
+<path d="M185,651 L217,651" stroke="#1F1D1A" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 5" marker-end="url(#notation-grayWithoutMarkers-arrow)"/>
+<text x="233" y="656" font-size="14" fill="#1F1D1A">Attacks</text>
+<text x="36" y="684" font-size="14" fill="#1F1D1A">Flow: roots (bottom) → outcomes (top).</text>
+</g>
+</svg>
+<figcaption>Without color, the node types blur together. Which nodes are problems?</figcaption>
+</figure>
+<details class="diagram-text"><summary>Diagram as text: A tree in grayscale, without text markers</summary><p>Nodes:</p><ul><li>Root / Problem: "Documentation is out of date"</li><li>Root / Problem: "Setting up a laptop takes a week"</li><li>Action / Intervention: "Write a one-page starter guide"</li><li>Desired State / Outcome: "New hires ship something in their first month"</li><li>Artifact / Deliverable: "Laptop setup script"</li></ul><p>Arrows:</p><ul><li>"Documentation is out of date" influences "Write a one-page starter guide"</li><li>"Write a one-page starter guide" influences "New hires ship something in their first month"</li><li>"Laptop setup script" influences "New hires ship something in their first month"</li><li>"Laptop setup script" attacks "Setting up a laptop takes a week"</li></ul></details>
+<figure class="diagram" style="max-width:400px;--diagram-min:400px">
+<svg viewBox="0 0 400 726" width="400" height="726" role="img" aria-labelledby="notation-grayWithMarkers-title notation-grayWithMarkers-desc" xmlns="http://www.w3.org/2000/svg" font-family="inherit" style="filter:grayscale(1)">
+<title id="notation-grayWithMarkers-title">The same tree in grayscale, with text markers</title>
+<desc id="notation-grayWithMarkers-desc">5 nodes and 4 arrows: 2 root / problem, 1 action / intervention, 1 artifact / deliverable, 1 desired state / outcome. A text version follows the diagram.</desc>
+<defs><marker id="notation-grayWithMarkers-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F1D1A"/></marker><filter id="notation-grayWithMarkers-shadow" x="-10%" y="-10%" width="130%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#1F1D1A" flood-opacity="0.18"/></filter></defs>
+<g class="dg-zones">
+</g>
+<g class="dg-frames">
+</g>
+<g class="dg-nodes">
+<g class="dg-node" data-node="p1" transform="translate(32 375)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#notation-grayWithMarkers-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Documentation is</text><text x="12" y="59" font-size="14" fill="#FFFFFF">out of date</text></g></g>
+<g class="dg-node" data-node="p2" transform="translate(218 375)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#6B3A2A" filter="url(#notation-grayWithMarkers-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[P]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Setting up a</text><text x="12" y="59" font-size="14" fill="#FFFFFF">laptop takes a</text><text x="12" y="76" font-size="14" fill="#FFFFFF">week</text></g></g>
+<g class="dg-node" data-node="a1" transform="translate(32 199)"><g transform="rotate(-1.35 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#D97706" filter="url(#notation-grayWithMarkers-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#1F1D1A">[A]</text><text x="12" y="42" font-size="14" fill="#1F1D1A">Write a one-page</text><text x="12" y="59" font-size="14" fill="#1F1D1A">starter guide</text></g></g>
+<g class="dg-node" data-node="d1" transform="translate(218 199)"><g transform="rotate(0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#4A5BAF" filter="url(#notation-grayWithMarkers-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[D]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">Laptop setup</text><text x="12" y="59" font-size="14" fill="#FFFFFF">script</text></g></g>
+<g class="dg-node" data-node="o1" transform="translate(125 23)"><g transform="rotate(-0.45 75 52)"><rect x="0" y="0" width="150" height="104" rx="3" fill="#2D7D46" filter="url(#notation-grayWithMarkers-shadow)"/><text x="12" y="21" font-size="11" font-weight="700" fill="#FFFFFF">[O]</text><text x="12" y="42" font-size="14" fill="#FFFFFF">New hires ship</text><text x="12" y="59" font-size="14" fill="#FFFFFF">something in</text><text x="12" y="76" font-size="14" fill="#FFFFFF">their first</text><text x="12" y="93" font-size="14" fill="#FFFFFF">month</text></g></g>
+</g>
+<g class="dg-edges">
+<path class="dg-edge" data-edge="p1&gt;a1&gt;influences" d="M107,370 Q114.2,339.5 107,309" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithMarkers-arrow)"/>
+<path class="dg-edge" data-edge="a1&gt;o1&gt;influences" d="M136.8,194.6 Q160.5,167.2 169.7,132.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithMarkers-arrow)"/>
+<path class="dg-edge" data-edge="d1&gt;o1&gt;influences" d="M263.2,194.6 Q253.9,159.6 230.3,132.3" fill="none" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithMarkers-arrow)"/>
+<path class="dg-edge" data-edge="d1&gt;p2&gt;attacks" d="M293,308 Q285.8,338.5 293,369" fill="none" stroke="#1F1D1A" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 6" marker-end="url(#notation-grayWithMarkers-arrow)"/>
+</g>
+<g class="dg-legend">
+<rect x="20" y="500" width="360" height="206" rx="4" fill="#F7F5F0" stroke="#5C574F"/>
+<text x="36" y="524" font-size="14" font-weight="700" fill="#1F1D1A">Legend</text>
+<rect x="36" y="540" width="15" height="15" rx="2" fill="#6B3A2A"/>
+<text x="60" y="552" font-size="14" fill="#1F1D1A">[P] Root / Problem</text>
+<rect x="36" y="566" width="15" height="15" rx="2" fill="#D97706"/>
+<text x="60" y="578" font-size="14" fill="#1F1D1A">[A] Action / Intervention</text>
+<rect x="36" y="592" width="15" height="15" rx="2" fill="#2D7D46"/>
+<text x="60" y="604" font-size="14" fill="#1F1D1A">[O] Desired State / Outcome</text>
+<rect x="36" y="618" width="15" height="15" rx="2" fill="#4A5BAF"/>
+<text x="60" y="630" font-size="14" fill="#1F1D1A">[D] Artifact / Deliverable</text>
+<path d="M36,651 L68,651" stroke="#1F1D1A" stroke-width="2" marker-end="url(#notation-grayWithMarkers-arrow)"/>
+<text x="84" y="656" font-size="14" fill="#1F1D1A">Influences</text>
+<path d="M185,651 L217,651" stroke="#1F1D1A" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 5" marker-end="url(#notation-grayWithMarkers-arrow)"/>
+<text x="233" y="656" font-size="14" fill="#1F1D1A">Attacks</text>
+<text x="36" y="684" font-size="14" fill="#1F1D1A">Flow: roots (bottom) → outcomes (top).</text>
+</g>
+</svg>
+<figcaption>With text markers, every type stays readable, with or without color.</figcaption>
+</figure>
+<details class="diagram-text"><summary>Diagram as text: The same tree in grayscale, with text markers</summary><p>Nodes:</p><ul><li>Root / Problem: "Documentation is out of date"</li><li>Root / Problem: "Setting up a laptop takes a week"</li><li>Action / Intervention: "Write a one-page starter guide"</li><li>Desired State / Outcome: "New hires ship something in their first month"</li><li>Artifact / Deliverable: "Laptop setup script"</li></ul><p>Arrows:</p><ul><li>"Documentation is out of date" influences "Write a one-page starter guide"</li><li>"Write a one-page starter guide" influences "New hires ship something in their first month"</li><li>"Laptop setup script" influences "New hires ship something in their first month"</li><li>"Laptop setup script" attacks "Setting up a laptop takes a week"</li></ul></details>
+<p>A tree that relies on color alone excludes some readers. The options below make it readable for everyone.</p>
+<h2 id="text-markers">Text markers</h2>
+<p>The simplest option: add a short marker to each node, next to its text.</p>
+<table>
+<thead>
+<tr>
+<th>Node type</th>
+<th>Marker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/reference/root-problem/">Root / Problem</a></td>
+<td><code>[P]</code></td>
+</tr>
+<tr>
+<td><a href="/reference/action-intervention/">Action / Intervention</a></td>
+<td><code>[A]</code></td>
+</tr>
+<tr>
+<td><a href="/reference/desired-state-outcome/">Desired State / Outcome</a></td>
+<td><code>[O]</code></td>
+</tr>
+<tr>
+<td><a href="/reference/artifact-deliverable/">Artifact / Deliverable</a></td>
+<td><code>[D]</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Put the marker at the start of the node's text, at the end, or in a corner, whatever your tool makes easy. Stay consistent within a tree.</li>
+<li>Markers supplement color. They do not replace it.</li>
+<li>List the markers in the <a href="/reference/legend/">legend</a>, next to each color: &quot;■ [P] Root / Problem.&quot;</li>
+<li>Markers are cheap to add during a live session, so they work even when construction speed matters.</li>
+</ul>
+<p>Every Tree of Influence on this website uses text markers, except the comparison above.</p>
+<h2 id="shape-variants">Shape variants</h2>
+<p>Tools with several node shapes, such as Miro, Mural, and Lucidchart, let you give each type its own shape instead of, or in addition to, markers. There is no prescribed mapping. Any consistent one works, as long as the legend documents it. For example:</p>
+<table>
+<thead>
+<tr>
+<th>Node type</th>
+<th>Shape (example only)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root / Problem</td>
+<td>Square</td>
+</tr>
+<tr>
+<td>Action / Intervention</td>
+<td>Parallelogram</td>
+</tr>
+<tr>
+<td>Desired State / Outcome</td>
+<td>Rounded rectangle</td>
+</tr>
+<tr>
+<td>Artifact / Deliverable</td>
+<td>Diamond</td>
+</tr>
+</tbody>
+</table>
+<p>Shapes are slower to work with than markers, because people have to pick a shape for every node. Use markers during live sessions, and consider shapes when a tree is being drawn deliberately, for example when cleaning it up to share.</p>
+<p>Using shapes replaces the &quot;one shape for every node&quot; default. Say so in the legend.</p>
+<h2 id="text-contrast">Text contrast</h2>
+<p>Node text must be easy to read against its color:</p>
+<ul>
+<li>Dark text on amber nodes. White text on amber fails common contrast standards.</li>
+<li>White text on dark brown, forest green, and indigo nodes.</li>
+<li>On a physical wall, write in large block letters with a thick marker. Thin pens and small handwriting are hard to read from a few steps away.</li>
+</ul>
+<p>See <a href="/reference/colors-and-shapes/">colors and shapes</a> for the standard colors and text colors.</p>
+<h2 id="sharing-a-tree">Sharing a tree</h2>
+<p>Board tools are mostly invisible to screen readers. When you share a tree with people who were not in the room, consider adding a text version: a list of the nodes by type, and a list of the arrows (&quot;Documentation is out of date&quot; influences &quot;New hires ship something in their first month&quot;). Every diagram on this website has one, under &quot;Diagram as text.&quot;</p>
+<h2 id="how-the-accessibility-layer-works">How the accessibility layer works</h2>
+<ul>
+<li><strong>It is optional.</strong> Add it when your participants or readers need it. A tree without markers is still a valid tree.</li>
+<li><strong>It does not change the standard.</strong> Colors, arrows, and orientation stay the same for everyone. The layer only adds information.</li>
+<li><strong>It goes in the legend.</strong> If a tree uses markers or shapes, its legend says so.</li>
+</ul>
+<h2 id="still-being-explored">Still being explored</h2>
+<p>Text markers and shapes address color vision. Other needs, such as cognitive load during large sessions or participation in physical sessions, have not been studied yet. If you have adapted the Tree of Influence for an accessibility need, <a href="/about/contributing/">share what you learned</a>.</p>
+
+
+    
+
+    
+    <section class="related" aria-labelledby="related-heading" data-pagefind-ignore>
+      <h2 id="related-heading">Related</h2>
+      <ul>
+        <li><a href="/reference/colors-and-shapes/">Colors and shapes</a></li>
+        <li><a href="/reference/legend/">The legend</a></li>
+        <li><a href="/reference/runaway-scale/">Runaway scale</a></li>
+      </ul>
+    </section>
+    
+
+    
+    <nav class="pager" aria-label="Previous and next pages" data-pagefind-ignore>
+      <a class="pager-previous" href="/reference/orientation/"><span>Previous</span>Orientation</a>
+      <a class="pager-next" href="/reference/full-tree/"><span>Next</span>Full tree</a>
+    </nav>
+    
+  </main>
+
+  
+  <aside class="toc-column"><nav class="toc" aria-label="On this page">
+  <p class="toc-title">On this page</p>
+  <ul>
+    <li><a href="#why-it-matters">Why it matters</a></li>
+    <li><a href="#text-markers">Text markers</a></li>
+    <li><a href="#shape-variants">Shape variants</a></li>
+    <li><a href="#text-contrast">Text contrast</a></li>
+    <li><a href="#sharing-a-tree">Sharing a tree</a></li>
+    <li><a href="#how-the-accessibility-layer-works">How the accessibility layer works</a></li>
+    <li><a href="#still-being-explored">Still being explored</a></li>
+  </ul>
+</nav>
+</aside>
+  
+</div>
+
+  <footer class="site-footer">
+    <p>&copy; Paulo Queiroga and contributors. Text and diagrams licensed under <a href="/about/license/">CC BY 4.0</a>. <a href="/about/privacy/">Privacy</a></p>
+  </footer>
+  <script src="/js/steps.js" defer></script>
+</body>
+</html>

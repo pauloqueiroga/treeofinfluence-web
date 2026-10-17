@@ -1,0 +1,414 @@
+/* Values come from website/STYLE_GUIDE.md. Change the guide first, then this file. */
+
+:root {
+  --ink: #1F1D1A;
+  --muted: #5C574F;
+  --border: #D9D4CA;
+  --surface: #F7F5F0;
+  --paper: #FFFFFF;
+
+  --root-brown: #6B3A2A;
+  --branch-amber: #D97706;
+  --leaf-green: #2D7D46;
+  --fruit-indigo: #4A5BAF;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  --text-body: 18px;
+  --text-small: 15px;
+  --text-h1: 36px;
+  --text-h2: 27px;
+  --text-h3: 21px;
+  --text-summary: 21px;
+
+  --measure: 70ch;
+  --space: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  :root {
+    --text-body: 17px;
+    --text-h1: 30px;
+    --text-h2: 24px;
+    --text-h3: 19px;
+    --text-summary: 19px;
+  }
+}
+
+/* Base */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: var(--text-body); }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  text-align: left;
+}
+
+h1, h2, h3 { color: var(--ink); text-wrap: balance; }
+h1 { font-size: var(--text-h1); font-weight: 700; line-height: 1.2; margin: 0 0 0.5rem; }
+h2 { font-size: var(--text-h2); font-weight: 700; line-height: 1.25; margin: 3rem 0 1rem; }
+h3 { font-size: var(--text-h3); font-weight: 600; line-height: 1.3; margin: 2rem 0 0.75rem; }
+
+p, ul, ol, dl, table, figure { margin: 0 0 var(--space); }
+
+a { color: var(--leaf-green); text-decoration: underline; text-underline-offset: 0.15em; }
+a:hover { color: var(--root-brown); }
+a[href^="http"]::after { content: " \2197"; font-size: 0.8em; }
+
+:focus-visible { outline: 2px solid var(--leaf-green); outline-offset: 2px; }
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--surface);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+/* Code blocks: literal text to copy, such as attribution lines. Lines wrap instead of scrolling. */
+pre {
+  background: var(--surface);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: var(--text-small);
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+pre code { background: none; padding: 0; font-size: 1em; }
+
+.contributors { margin-top: 0; }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
+
+.page-summary {
+  font-size: var(--text-summary);
+  line-height: 1.45;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--paper);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+/* Header and footer */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: var(--paper);
+}
+
+.site-header-inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 2.5rem;
+}
+
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.site-title:hover { color: var(--root-brown); }
+/* The brand mark: 32px in the header. Never smaller than 16px (style guide, Section 5.7). */
+.site-mark { display: block; width: 32px; height: 32px; flex: none; }
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+}
+
+.site-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: var(--text-small);
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid transparent;
+}
+.site-nav a:hover { color: var(--root-brown); border-bottom-color: var(--border); }
+.site-nav a[aria-current] { color: var(--root-brown); font-weight: 600; border-bottom-color: var(--root-brown); }
+
+.site-search { display: flex; gap: 0.5rem; margin-left: auto; }
+.site-search[hidden] { display: none; }
+
+/* Analytics question (style guide, Section 5.6). In the page flow, above the header, so it never covers content. */
+.consent {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem max(1.5rem, calc((100% - 1320px) / 2 + 1.5rem));
+  font-size: var(--text-small);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+}
+.consent[hidden], .consent-choice[hidden] { display: none; }
+.consent p { margin: 0; }
+[data-consent][aria-pressed="true"] { border-color: var(--root-brown); color: var(--root-brown); font-weight: 600; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+  padding: 1.5rem max(1.5rem, calc((100% - 1320px) / 2 + 1.5rem));
+  font-size: var(--text-small);
+  color: var(--muted);
+}
+.site-footer p { margin: 0; }
+
+/* Three-column page layout */
+
+.page-grid {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+  display: grid;
+  grid-template-columns: 15rem minmax(0, var(--measure)) 13rem;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.content { min-width: 0; max-width: var(--measure); }
+
+.sidebar, .toc-column {
+  position: sticky;
+  top: 1.5rem;
+  align-self: start;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  font-size: var(--text-small);
+  line-height: 1.5;
+}
+
+.sidebar { background: var(--surface); padding: 1.25rem; border-radius: 4px; }
+.sidebar ul, .section-menu ul, .toc ul { list-style: none; margin: 0 0 1rem; padding: 0; }
+.sidebar li, .section-menu li, .toc li { margin: 0.3rem 0; }
+.sidebar a, .section-menu a, .toc a { color: var(--ink); text-decoration: none; }
+.sidebar a:hover, .section-menu a:hover, .toc a:hover { color: var(--root-brown); text-decoration: underline; }
+.sidebar a[aria-current="page"], .section-menu a[aria-current="page"] { color: var(--root-brown); font-weight: 600; }
+
+.sidebar-title { font-weight: 700; margin-bottom: 1rem; }
+.sidebar-group, .toc-title {
+  color: var(--muted);
+  font-weight: 600;
+  margin: 1.25rem 0 0.4rem;
+}
+.toc-title { margin-top: 0; }
+
+.section-menu { display: none; }
+
+@media (max-width: 1150px) {
+  .page-grid { grid-template-columns: 14rem minmax(0, var(--measure)); }
+  .toc-column { display: none; }
+}
+
+@media (max-width: 800px) {
+  .page-grid { display: block; padding-top: 1.5rem; }
+  .sidebar { display: none; }
+  .section-menu {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--muted);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 2rem;
+    font-size: var(--text-small);
+  }
+  .section-menu summary { cursor: pointer; font-weight: 600; }
+  table { display: block; overflow-x: auto; }
+  /* Diagrams keep a readable size and scroll sideways instead of shrinking. */
+  figure.diagram { overflow-x: auto; }
+  figure.diagram svg { min-width: var(--diagram-min); }
+  .section-menu[open] summary { margin-bottom: 1rem; }
+  .site-search { margin-left: 0; width: 100%; }
+  .site-search input { flex: 1; }
+}
+
+/* Home */
+
+.home {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 0;
+}
+.home > p, .home > ul { max-width: var(--measure); }
+
+/* The full tree illustration appears here and nowhere else on the site. */
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 20rem;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.home-hero .page-summary { margin-bottom: 0; }
+.home-hero-image { display: block; width: 100%; height: auto; }
+
+@media (max-width: 800px) {
+  .home-hero { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .home-hero-image { width: 11rem; order: -1; }
+}
+
+.entry-points {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25rem;
+}
+.entry-points li {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.25rem;
+}
+.entry-points h3 { margin-top: 0; }
+.entry-points p { margin-bottom: 0.75rem; }
+.entry-points p:last-child { margin-bottom: 0; }
+
+/* Components */
+
+.callout {
+  background: var(--surface);
+  border-left: 4px solid var(--border);
+  padding: 1rem 1.25rem;
+  margin: 0 0 var(--space);
+  border-radius: 0 4px 4px 0;
+}
+.callout > :last-child { margin-bottom: 0; }
+.callout-tip { border-left-color: var(--leaf-green); }
+.callout-trap { border-left-color: var(--root-brown); }
+.callout-label { font-weight: 700; margin-bottom: 0.4rem; }
+
+/* Facilitator script: words said out loud. Written as a Markdown blockquote. */
+blockquote {
+  margin: 0 0 var(--space) 1.5rem;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 3px solid var(--muted);
+  font-style: italic;
+}
+blockquote > :last-child { margin-bottom: 0; }
+
+table { border-collapse: collapse; width: 100%; font-size: var(--text-small); }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); }
+th { background: var(--surface); font-weight: 600; }
+.table-scroll { overflow-x: auto; }
+
+figure.diagram { margin: 2rem 0 0.5rem; }
+figure.diagram svg { display: block; width: 100%; height: auto; }
+figure.diagram figcaption { font-size: var(--text-small); color: var(--muted); margin-top: 0.5rem; }
+/* A tree too large for the column keeps a readable size and scrolls sideways. */
+figure.diagram.wide { overflow-x: auto; }
+figure.diagram.wide svg { width: var(--diagram-min); }
+figure.diagram.wide figcaption { position: sticky; left: 0; }
+
+/* Text version of a diagram, for screen readers and for anyone who prefers reading. */
+.diagram-text { font-size: var(--text-small); margin: 0 0 2rem; }
+.diagram-text summary { color: var(--muted); cursor: pointer; }
+.diagram-text summary:hover { color: var(--root-brown); }
+.diagram-text[open] { background: var(--surface); padding: 0.75rem 1rem; border-radius: 4px; }
+.diagram-text p { margin: 0.75rem 0 0.25rem; font-weight: 600; }
+.diagram-text ul { margin: 0; }
+
+.section-list dl { margin: 0 0 2rem; }
+.section-list dt { font-weight: 600; margin-top: 1rem; }
+.section-list dd { margin: 0.2rem 0 0; color: var(--muted); }
+
+/* Glossary */
+.glossary-letters { display: flex; flex-wrap: wrap; gap: 0.25rem 0.9rem; margin: 0 0 1rem; font-weight: 600; }
+.glossary-letters a { text-decoration: none; }
+.glossary-letters a:hover { text-decoration: underline; }
+dl.glossary { margin: 0 0 1rem; }
+dl.glossary dt { font-weight: 700; margin-top: 1.25rem; scroll-margin-top: 1rem; }
+dl.glossary dd { margin: 0.25rem 0 0; }
+dl.glossary dd.glossary-alias { color: var(--muted); }
+
+.related { margin-top: 3rem; }
+.related h2 { font-size: var(--text-h3); margin-top: 0; }
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+.pager a { display: block; max-width: 48%; text-decoration: none; font-weight: 600; }
+.pager a span { display: block; font-size: var(--text-small); font-weight: 400; color: var(--muted); }
+.pager-next { margin-left: auto; text-align: right; }
+
+/* Buttons and form fields. Their borders are Muted, because the reader must see them (style guide, Section 5.2). */
+.steps-controls button, .site-search button, .search-form button, .search-more, .consent button, .consent-choice button,
+.site-search input, .search-form input {
+  font: inherit; font-size: var(--text-small); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--muted); border-radius: 4px; padding: 0.3rem 0.9rem;
+}
+.site-search button, .search-form button, .search-more, .consent button, .consent-choice button { cursor: pointer; }
+.site-search button:hover, .search-form button:hover, .search-more:hover, .consent button:hover, .consent-choice button:hover { color: var(--root-brown); border-color: var(--root-brown); }
+.site-search input, .search-form input { padding: 0.3rem 0.6rem; min-width: 0; }
+.site-search input { width: 12rem; }
+
+/* Search page (style guide, Section 5.6). Matching words are bold, not colored. The 404 page shares its column. */
+.search-page, .not-found {
+  max-width: calc(var(--measure) + 3rem);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0;
+}
+.search-form { display: flex; gap: 0.5rem; margin: 0 0 var(--space); }
+.search-form input { flex: 1; font-size: 1rem; }
+.search-form button { font-size: 1rem; }
+.search-status { color: var(--muted); }
+.search-results { list-style: none; padding: 0; }
+.search-results li { margin: 0 0 2rem; }
+.search-results h2 { font-size: var(--text-h3); margin: 0 0 0.4rem; }
+.search-result-section, .search-result-parts { font-size: var(--text-small); color: var(--muted); margin: 0; }
+.search-result-excerpt { margin: 0 0 0.4rem; }
+.search-results mark { background: none; color: inherit; font-weight: 700; }
+
+/* Step-through diagrams (style guide, Section 6.6). Without JavaScript, every step shows in turn. */
+.steps-frame + .steps-frame { margin-top: 2rem; }
+.steps-caption { font-size: var(--text-small); color: var(--muted); margin: 0 0 0.5rem; min-height: 1.5em; }
+.steps-count { font-weight: 600; color: var(--ink); }
+.steps-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin: 0 0 0.5rem; }
+.steps-controls button { cursor: pointer; }
+.steps-controls button:hover:not(:disabled) { color: var(--root-brown); border-color: var(--root-brown); }
+.steps-controls button:disabled { opacity: 0.45; cursor: default; }
+.steps-status { font-size: var(--text-small); color: var(--muted); font-variant-numeric: tabular-nums; min-width: 7em; text-align: center; }
+.steps-stage .dg-node { transition: transform 450ms ease; }
+.steps-stage .dg-enter { animation: dg-fade-in 350ms ease both; }
+.steps-stage .dg-leave { animation: dg-fade-out 300ms ease both; }
+.steps-stage .dg-draw { animation: dg-draw 450ms ease-out both; }
+@keyframes dg-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes dg-fade-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes dg-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .steps-stage .dg-node { transition: none; }
+  .steps-stage .dg-enter, .steps-stage .dg-leave, .steps-stage .dg-draw { animation: none; }
+}
